@@ -2,7 +2,8 @@
 set number            "Show line numbers
 set ruler             "Show the line and column number of the cursor position
 colorscheme monokai   "Set color scheme to monokai
-syntax on             "and set it to use
+syntax on             "and set it to use, yay colors <3
+set mouse=a           "mouse scrolling, CLI can be modern!
 
 "-- Programming --
 set autoindent        "Copy indent from current line when starting a new line
