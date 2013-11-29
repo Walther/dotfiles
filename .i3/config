@@ -9,6 +9,10 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# essential startup execs
+exec dropbox start
+
+# set modifier key to win/super
 set $mod Mod4
 
 # focus right
@@ -51,10 +55,7 @@ bindsym $mod+f fullscreen
 # bindsym $mod+e layout default
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space floating toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
