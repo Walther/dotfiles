@@ -26,6 +26,8 @@ urxvt*color13: #bb88dd
 urxvt*color14: #4eb4fa
 urxvt*color15: #d0d0d0
 
+
+! Correcting ctrl-arrows behaviour in Vim
 URxvt.keysym.Control-Up:   \033[1;5A
 URxvt.keysym.Control-Down:    \033[1;5B
 URxvt.keysym.Control-Left:    \033[1;5D
