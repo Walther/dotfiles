@@ -29,7 +29,8 @@ bindsym $mod+Return exec urxvt
 
 # start dmenu (a program launcher)
 # keycode 23 = tab
-bind $mod+23 exec dmenu_run
+#bind $mod+23 exec dmenu_run
+bind $mod+23 exec dmenu_run -nb '#222222' -nf '#77216F' -sb '#AAAAAA' -sf '#77216F'
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
