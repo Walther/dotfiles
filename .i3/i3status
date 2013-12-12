@@ -29,7 +29,7 @@ time {
 }
 
 load {
-        format = "%1min"
+        format = "Load: %1min %5min %15min"
 }
 
 disk "/" {
