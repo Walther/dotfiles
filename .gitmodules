@@ -4,3 +4,6 @@
 [submodule "monokai-xterm"]
 	path = monokai-xterm
 	url = https://github.com/cemmanouilidis/monokai-xterm
+[submodule "urxvt-perls"]
+	path = urxvt-perls
+	url = https://github.com/muennich/urxvt-perls
