@@ -11,6 +11,7 @@
 
 # essential startup execs
 exec dropbox start
+exec feh --bg-fill "/home/walther/Dropbox/Public/not just a soldier.jpg"
 
 # set modifier key to win/super
 set $mod Mod4
