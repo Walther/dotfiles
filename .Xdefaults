@@ -7,9 +7,12 @@ urxvt.perl-ext-common:      clipboard
 urxvt.keysym.C-V:           perl:clipboard:paste
 urxvt.keysym.C-C:           perl:clipboard:copy
 
+! Powerline-patched font
+urxvt.font: xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
+
 ! Monokai theme
-urxvt*background: #101010
-urxvt*foreground: #d0d0d0
+urxvt*background: #272822
+urxvt*foreground: #ffffff
 urxvt*cursorColor: #8000BA
 urxvt*color0: #101010
 urxvt*color1: #960050
