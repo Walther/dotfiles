@@ -10,3 +10,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts/
+[submodule "oh-my-fish"]
+	path = oh-my-fish
+	url = https://github.com/bpinto/oh-my-fish
