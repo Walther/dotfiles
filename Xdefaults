@@ -1,4 +1,4 @@
-! General prettifications
+<! General prettifications
 urxvt*scrollBar: false
 urxvt.iso14755: False
 
@@ -11,26 +11,26 @@ urxvt.keysym.C-C:           perl:clipboard:copy
 urxvt.font: xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
 
 ! urxvt Monokai theme / color scheme
-urxvt*background : #272822 ! warm gray
-urxvt*foreground : #ffffff ! white
-urxvt*cursorColor: #7e40a5 ! purple
+urxvt*background : #272822
+urxvt*foreground : #ffffff
+urxvt*cursorColor: #7e40a5
 
-urxvt*color0     : #101010 ! dark
-urxvt*color1     : #960050 ! dark pink
-urxvt*color2     : #66aa11 ! lime green
-urxvt*color3     : #c47f2c ! orange
-urxvt*color4     : #30309b ! blue
-urxvt*color5     : #7e40a5 ! purple
-urxvt*color6     : #89b6e2 ! cyan
-urxvt*color7     : #9999aa ! light gray
-urxvt*color8     : #75715E ! light warm gray
-urxvt*color9     : #ff0090 ! hot pink
-urxvt*color10    : #80ff00 ! light lime green
-urxvt*color11    : #ffba68 ! light orange
-urxvt*color12    : #5f5fee ! light blue
-urxvt*color13    : #bb88dd ! light purple
-urxvt*color14    : #4eb4fa ! light cyan
-urxvt*color15    : #ffffff ! white
+urxvt*color0     : #101010
+urxvt*color1     : #960050
+urxvt*color2     : #66aa11
+urxvt*color3     : #c47f2c
+urxvt*color4     : #30309b
+urxvt*color5     : #7e40a5
+urxvt*color6     : #89b6e2
+urxvt*color7     : #9999aa
+urxvt*color8     : #75715E
+urxvt*color9     : #ff0090
+urxvt*color10    : #80ff00
+urxvt*color11    : #ffba68
+urxvt*color12    : #5f5fee
+urxvt*color13    : #bb88dd
+urxvt*color14    : #4eb4fa
+urxvt*color15    : #ffffff
 
 
 ! Correcting ctrl-arrows behaviour in Vim
