@@ -1,4 +1,4 @@
-<! General prettifications
+! General prettifications
 urxvt*scrollBar: false
 urxvt.iso14755: False
 
