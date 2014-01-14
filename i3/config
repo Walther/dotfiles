@@ -12,6 +12,7 @@
 # essential startup execs
 exec dropbox start
 exec feh --bg-fill "/home/walther/Dropbox/Public/not just a soldier.jpg"
+exec_always xmodmap ~/.Xmodmap
 
 # set modifier key to win/super
 set $mod Mod4
@@ -26,7 +27,7 @@ focus_follows_mouse no
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvt -e fish
 
 # start dmenu (a program launcher)
 # keycode 23 = tab
