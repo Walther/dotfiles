@@ -14,6 +14,10 @@ exec dropbox start
 exec feh --bg-fill "/home/walther/Dropbox/Public/not just a soldier.jpg"
 exec_always xmodmap ~/.Xmodmap
 
+# pretty
+#font pango:DejaVu Sans Mono 10
+font pango:DejaVu Sans Mono for Powerline 10
+
 # set modifier key to win/super
 set $mod Mod4
 
