@@ -4,6 +4,11 @@
 sudo apt-get update;
 sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap python-pip rxvt-unicode-256color tmux vim xclip;
 
+mkdir -p ~/Downloads
+cd ~/Downloads
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 pip install --user git+git://github.com/Lokaltog/powerline
 
 cp Xdefaults ~/.Xdefaults
