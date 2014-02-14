@@ -2,7 +2,7 @@
 # My dotfiles - essential software, their configs, etc
 
 sudo apt-get update;
-sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap python-pip rxvt-unicode-256color tmux vim xclip;
+sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap python-pip rxvt-unicode-256color tmux vim vim-gtk xclip;
 
 mkdir -p ~/Downloads
 cd ~/Downloads
