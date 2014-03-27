@@ -32,8 +32,5 @@ if &term =~ '256color'
   set t_ut=
 endif
 
-"-- Powerline goodness --
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-
 " Always show statusline
 set laststatus=2

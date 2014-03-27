@@ -6,8 +6,6 @@ sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap python-pip
 
 sudo cp urxvt-perls/clipboard /usr/lib/urxvt/perl/
 
-pip install --user git+git://github.com/Lokaltog/powerline
-
 mkdir -p ~/Downloads
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
