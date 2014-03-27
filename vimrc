@@ -33,5 +33,9 @@ if &term =~ '256color'
   set t_ut=
 endif
 
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme = "powerlineish"
 " Always show statusline
 set laststatus=2

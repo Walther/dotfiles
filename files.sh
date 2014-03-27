@@ -22,4 +22,6 @@ mkdir -p ~/.fonts/
 cp -R powerline-fonts/ ~/.fonts/
 fc-cache -vf ~/.fonts/
 
-git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish
+git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish;
+git clone https://github.com/bling/vim-airline /tmp/vim-airline;
+cp -R /tmp/vim-airline/doc /tmp/vim-airline/plugin /tmp/vim-airline/t /tmp/vim-airline/autoload ~/.vim/
