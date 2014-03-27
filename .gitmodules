@@ -1,6 +1,3 @@
-[submodule "vim-monokai"]
-	path = vim-monokai
-	url = https://github.com/sickill/vim-monokai
 [submodule "monokai-xterm"]
 	path = monokai-xterm
 	url = https://github.com/cemmanouilidis/monokai-xterm

@@ -1,7 +1,8 @@
 "-- General --
 set number            "Show line numbers
 set ruler             "Show the line and column number of the cursor position
-colorscheme monokai   "Set color scheme to monokai
+let molokai_original = 1 "a nice variable for the theme...
+colorscheme molokai   "set the color scheme to molokai...
 syntax on             "and set it to use, yay colors <3
 set mouse=a           "mouse scrolling, CLI can be modern!
 

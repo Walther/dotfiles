@@ -11,7 +11,7 @@ mkdir -p ~/.config/fish/
 cp config.fish ~/.config/fish/config.fish
 
 mkdir -p ~/.vim/colors/
-cp vim-monokai/colors/monokai.vim ~/.vim/colors/
+cp molokai.vim ~/.vim/colors/
 cp vimrc ~/.vimrc
 
 
