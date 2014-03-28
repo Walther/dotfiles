@@ -2,9 +2,11 @@
 # My preferred software + some customizations. Requires sudo.
 
 sudo apt-get update;
-sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap python-pip rxvt-unicode-256color tmux vim vim-nox;
+sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap rxvt-unicode-256color tmux vim vim-nox;
 
-sudo cp urxvt-perls/clipboard /usr/lib/urxvt/perl/
+mkdir -p /tmp/urxvt-perls
+git clone https://github.com/muennich/urxvt-perls /tmp/urxvt-perls
+sudo cp /tmp/urxvt-perls/clipboard /usr/lib/urxvt/perl/
 
 mkdir -p ~/Downloads
 cd ~/Downloads

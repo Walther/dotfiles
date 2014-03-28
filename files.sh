@@ -16,10 +16,12 @@ cp vimrc ~/.vimrc
 
 
 mkdir -p ~/.i3/
-cp i3/* ~/.i3/
+cp i3* ~/.i3/
 
 mkdir -p ~/.fonts/
-cp -R powerline-fonts/ ~/.fonts/
+mkdir -p ~/tmp/powerline-fonts
+git clone https://github.com/Lokaltog/powerline-fonts /tmp/powerline-fonts
+cp -R /tmp/powerline-fonts/ ~/.fonts/
 fc-cache -vf ~/.fonts/
 
 git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish;
