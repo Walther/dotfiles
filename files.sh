@@ -23,7 +23,8 @@ cp vimrc ~/.vimrc
 git clone https://github.com/bling/vim-airline /tmp/vim-airline;
 cp -R /tmp/vim-airline/doc /tmp/vim-airline/plugin /tmp/vim-airline/t /tmp/vim-airline/autoload ~/.vim/
 mkdir -p ~/.i3/
-cp i3* ~/.i3/
+cp i3.conf ~/.i3/config
+cp i3status.conf ~/.i3/
 
 # Fonts
 mkdir -p ~/.fonts/
