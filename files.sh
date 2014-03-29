@@ -11,7 +11,7 @@ cp gitconfig ~/.gitconfig
 # Shell
 mkdir -p ~/.config/fish/
 cp config.fish ~/.config/fish/config.fish
-git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish;
+git clone https://github.com/bpinto/oh-my-fish ~/.oh-my-fish;
 
 # Vim
 mkdir -p /tmp/vim-molokai
