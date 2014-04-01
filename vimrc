@@ -39,3 +39,5 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = "powerlineish"
 " Always show statusline
 set laststatus=2
+" Fix molokai/monokai background color, as my urxvt has the correct bg :3
+hi Normal ctermbg=None
