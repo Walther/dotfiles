@@ -2,6 +2,9 @@
 set fish_path $HOME/.oh-my-fish
 set TERM xterm-256color
 
+# Set editors <3
+set EDITOR vim
+set VISUAL subl
 # Theme
 set fish_theme bobthefish
 
