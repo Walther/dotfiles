@@ -28,7 +28,7 @@ cp i3status.conf ~/.i3/
 
 # Fonts
 mkdir -p ~/.fonts/
-mkdir -p ~/tmp/powerline-fonts
+mkdir -p /tmp/powerline-fonts
 git clone https://github.com/Lokaltog/powerline-fonts /tmp/powerline-fonts
 cp -R /tmp/powerline-fonts/ ~/.fonts/
 fc-cache -vf ~/.fonts/
