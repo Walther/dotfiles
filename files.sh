@@ -12,6 +12,7 @@ cp gitconfig ~/.gitconfig
 mkdir -p ~/.config/fish/
 cp config.fish ~/.config/fish/config.fish
 git clone https://github.com/bpinto/oh-my-fish ~/.oh-my-fish;
+cd ~/.oh-my-fish; git pull; cd ~; # hacky way to make sure it's up to date
 
 # Vim
 mkdir -p /tmp/vim-molokai
