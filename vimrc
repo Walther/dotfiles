@@ -41,3 +41,7 @@ let g:airline_theme = "powerlineish"
 set laststatus=2
 " Fix molokai/monokai background color, as my urxvt has the correct bg :3
 hi Normal ctermbg=None
+
+" Fix .md -> markdown highlighting
+au BufRead,BufNewFile *.md set filetype=markdown
+
