@@ -1,5 +1,0 @@
-!
-! Make Caps_Lock an additional Escape key
-!
-keycode 66 = Escape Escape Escape Escape Escape Escape Escape Escape
-clear lock
