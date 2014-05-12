@@ -2,7 +2,7 @@
 # My preferred software + some customizations. Requires sudo.
 
 sudo apt-get update;
-sudo apt-get install fish ghc git htop i3 i3-wm i3status lightdm nmap rxvt-unicode-256color tmux vim vim-nox;
+sudo apt-get install fish ghc git htop i3 i3-wm lightdm nmap rxvt-unicode-256color scrot tmux vim vim-nox xcompmgr;
 
 mkdir -p /tmp/urxvt-perls
 git clone https://github.com/muennich/urxvt-perls /tmp/urxvt-perls
