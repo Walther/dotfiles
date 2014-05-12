@@ -3,7 +3,6 @@
 
 # Various essentials
 cp Xdefaults ~/.Xdefaults
-cp Xmodmap ~/.Xmodmap
 cp screenrc ~/.screenrc
 cp tmux.conf ~/.tmux.conf
 cp gitconfig ~/.gitconfig
