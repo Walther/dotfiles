@@ -19,6 +19,7 @@ set autoindent        "Copy indent from current line when starting a new line
 set expandtab         "Use spaces instead of tabs
 set shiftwidth=4
 set tabstop=4
+:command Untrail %s/\s\+$//g "Remove trailing whitespace
 
 "-- Searching --
 set hlsearch          "Highlight search results
