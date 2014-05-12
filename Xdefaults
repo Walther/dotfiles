@@ -1,6 +1,6 @@
 ! General prettifications
-urxvt*scrollBar: false
-urxvt.iso14755: False
+urxvt*scrollBar:   false
+urxvt.iso14755:    false
 
 ! Copypasta https://github.com/muennich/urxvt-perls
 urxvt.perl-ext-common:      clipboard
@@ -8,10 +8,12 @@ urxvt.keysym.C-V:           perl:clipboard:paste
 urxvt.keysym.C-C:           perl:clipboard:copy
 
 ! Powerline-patched font
-urxvt.font: xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
+urxvt.font:        xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
 
 ! urxvt Monokai theme / color scheme
-urxvt*background : #272822
+urxvt.depth:       32;
+urxvt.transparent: true;
+urxvt*background : [85]#272822
 urxvt*foreground : #ffffff
 urxvt*cursorColor: #7e40a5
 
