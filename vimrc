@@ -8,9 +8,9 @@ set mouse=a           "mouse scrolling, CLI can be modern!
 set switchbuf=usetab,newtab "switch to existing buffers instead of forcing a new one in current view
 
 " ctrl-pgup -> previous buffer
-map [5^ :bprev
+map [5^ :tabprev
 " ctrl-pgdn -> next buffer
-map [6^ :bnext
+map [6^ :tabnext
 
 "-- Programming --
 set autoindent        "Copy indent from current line when starting a new line
