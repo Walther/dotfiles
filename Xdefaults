@@ -10,11 +10,10 @@ urxvt.keysym.C-C:           perl:clipboard:copy
 ! Powerline-patched font
 urxvt.font:        xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
 
+! urxvt Monokai theme / color scheme
 urxvt.depth:       32;
 urxvt.transparent: true;
 urxvt*background : [85]#272822
-
-! Monokai theme / color scheme
 *background : #272822
 *foreground : #ffffff
 *cursorColor: #7e40a5
@@ -36,30 +35,6 @@ urxvt*background : [85]#272822
 *color14    : #4eb4fa
 *color15    : #ffffff
 
-! Monokai Bright theme / color scheme
-
-*background : #272822
-*foreground : #ffffff
-
-*color0 : #1c1c1c
-*color1 : #f92672
-*color2 : #a6e22e
-*color3 : #f6aa11
-*color4 : #30309b
-*color5 : #967efb
-*color6 : #89b6e2
-
-*color7 : #c6cece
-
-*color8 : #75715e
-*color9 : #ff4a52
-*color10: #9df39f
-*color11: #ffe792
-*color12: #5f5fee
-*color13: #bb88dd
-*color14: #3bc0f0
-
-*color15: #ffffff
 
 ! Correcting ctrl-arrows behaviour in Vim
 urxvt.keysym.Control-Up:    \033[1;5A
