@@ -21,3 +21,10 @@ set fish_theme bobthefish
 # Override bobthefish theme default "motd"
 function fish_greeting
 end
+
+# A nasty little update & upgrade alias
+function updates
+    sudo apt-get update;
+    sudo apt-get upgrade;
+    sudo apt-get dist-upgrade;
+end
