@@ -13,3 +13,14 @@ My "dotfiles".
 
 Screenshot:
 ![screenshot](dotfiles.png)
+
+## How to use
+Currently there are two scripts:
+- `install.sh`, which installs a list of commonly used applications and tools
+- `files.sh`, which pulls stuff from remote repositories and puts all the files in place
+
+I recommend reading both scripts before running.
+
+## Todo
+- Create a proper installer script
+- Add "update" functionality
