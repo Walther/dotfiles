@@ -1,4 +1,6 @@
 "-- General --
+set encoding=utf-8    "For obvious reasons
+
 set number            "Show line numbers
 set ruler             "Show the line and column number of the cursor position
 let molokai_original = 1 "a nice variable for the theme...
@@ -25,10 +27,13 @@ set tabstop=4
 set hlsearch          "Highlight search results
 set ignorecase        "When doing a search, ignore the case of letters
 set smartcase         "Override the ignorecase option if the search pattern contains upper case letters
+set incsearch         "show search results while typing
+set showmatch
 "Clear the search highlight by pressing ENTER when in Normal mode (Typing commands)
 :nnoremap <CR> :nohlsearch<CR>/<BS><CR>
 
 "-- Tweaks --
+
 "Add tweak for better backspace support
 set backspace=indent,eol,start
 if &term =~ '256color'
@@ -37,7 +42,9 @@ if &term =~ '256color'
   " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
   set t_ut=
 endif
-
+" Don't litter swp files everywhere
+set backupdir=~/.vim/.backup
+set directory=~/.vim/.backup
 
 " vim-airline
 let g:airline_powerline_fonts = 1
@@ -51,3 +58,11 @@ hi Normal ctermbg=None
 " Fix .md -> markdown highlighting
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" Sudo power!
+cmap w!! %!sudo tee > /dev/null % " use w!! to write file as root
+
+" C-c as <ESC>
+inoremap <C-c> <ESC>
+
+" Shift-tab as deindent; familiar from e.g. Sublime text
+inoremap <S-Tab> <C-d>
