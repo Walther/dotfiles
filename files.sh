@@ -14,6 +14,8 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
 git clone https://github.com/edkolev/promptline.vim ~/.vim/bundle/promptline.vim
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/vim-nerdtree-tabs
 
 mkdir -p /tmp/vim-molokai
 git clone https://github.com/tomasr/molokai /tmp/vim-molokai

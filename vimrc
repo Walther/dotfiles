@@ -10,9 +10,9 @@ set mouse=a           "mouse scrolling, CLI can be modern!
 set switchbuf=usetab,newtab "switch to existing buffers instead of forcing a new one in current view
 
 " ctrl-pgup -> previous buffer
-map [5^ :tabprev
+map [5^ :bprev<CR>
 " ctrl-pgdn -> next buffer
-map [6^ :tabnext
+map [6^ :bnext<CR>
 
 "-- Programming --
 set autoindent        "Copy indent from current line when starting a new line
@@ -48,6 +48,9 @@ endif
 " Don't litter swp files everywhere
 set backupdir=~/.vim/.backup
 set directory=~/.vim/.backup
+
+" NERDTree stuff
+let g:nerdtree_tabs_open_on_console_startup=1
 
 " vim-airline
 let g:airline_powerline_fonts = 1
