@@ -28,7 +28,5 @@ cp -R /tmp/powerline-fonts/ ~/.fonts/
 fc-cache -vf ~/.fonts/
 
 # Shell
-mkdir -p ~/.config/fish/
-cp config.fish ~/.config/fish/config.fish
-git clone https://github.com/bpinto/oh-my-fish ~/.oh-my-fish;
-cd ~/.oh-my-fish; git pull; cd ~; # hacky way to make sure it's up to date
+cp zshrc ~/.zshrc
+cp shell_prompt.sh ~/.shell_prompt.sh
