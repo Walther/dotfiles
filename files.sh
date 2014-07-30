@@ -8,17 +8,22 @@ cp tmux.conf ~/.tmux.conf
 cp gitconfig ~/.gitconfig
 
 # Vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+git clone https://github.com/edkolev/tmuxline.vim ~/.vim/bundle/tmuxline.vim
+git clone https://github.com/edkolev/promptline.vim ~/.vim/bundle/promptline.vim
+
 mkdir -p /tmp/vim-molokai
 git clone https://github.com/tomasr/molokai /tmp/vim-molokai
 mkdir -p ~/.vim/colors/
 cp /tmp/vim-molokai/colors/molokai.vim ~/.vim/colors/
 cp vimrc ~/.vimrc
 
-git clone https://github.com/bling/vim-airline /tmp/vim-airline;
-cp -R /tmp/vim-airline/doc /tmp/vim-airline/plugin /tmp/vim-airline/t /tmp/vim-airline/autoload ~/.vim/
+# i3 window manager
 mkdir -p ~/.i3/
 cp i3.conf ~/.i3/config
-cp i3status.conf ~/.i3/
 
 # Fonts
 mkdir -p ~/.fonts/

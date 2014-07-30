@@ -34,6 +34,9 @@ set showmatch
 
 "-- Tweaks --
 
+" Pathogen
+execute pathogen#infect()
+
 "Add tweak for better backspace support
 set backspace=indent,eol,start
 if &term =~ '256color'
