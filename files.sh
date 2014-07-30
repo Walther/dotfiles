@@ -8,6 +8,7 @@ cp tmux.conf ~/.tmux.conf
 cp gitconfig ~/.gitconfig
 
 # Vim
+mkdir -p ~/.vim/.backup
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
