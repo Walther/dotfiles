@@ -65,7 +65,7 @@ hi Normal ctermbg=None
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " Sudo power!
-cmap w!! %!sudo tee > /dev/null % " use w!! to write file as root
+cmap w!! w !sudo tee > /dev/null %
 
 " C-c as <ESC>
 inoremap <C-c> <ESC>
