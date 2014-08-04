@@ -16,6 +16,13 @@ map [5^ :bprev<CR>
 " ctrl-pgdn -> next buffer
 map [6^ :bnext<CR>
 
+" case-insensitive w and q
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
+
 "-- Programming --
 set autoindent        "Copy indent from current line when starting a new line
 
