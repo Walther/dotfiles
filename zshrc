@@ -13,3 +13,6 @@ alias ll=ls -halF --color=auto
 
 # ls after cd
 chpwd() ls -CF --color=auto
+
+# "irkki"
+alias irkki="tmux attach -d"
