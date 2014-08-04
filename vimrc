@@ -8,17 +8,13 @@ colorscheme molokai   "set the color scheme to molokai...
 syntax on             "and set it to use, yay colors <3
 set mouse=a           "mouse scrolling, CLI can be modern!
 set switchbuf=usetab,newtab "switch to existing buffers instead of forcing a new one in current view
+set noerrorbells      " Grrrr.
+set visualbell t_vb=  " There we go.
 
 " ctrl-pgup -> previous buffer
 map [5^ :bprev<CR>
 " ctrl-pgdn -> next buffer
 map [6^ :bnext<CR>
-
-" case-insensitive w and q
-:command WQ wq
-:command Wq wq
-:command W w
-:command Q q
 
 "-- Programming --
 set autoindent        "Copy indent from current line when starting a new line
