@@ -66,4 +66,6 @@ unset AUTO_MENU
     zle -N insert-sudo insert_sudo
     bindkey "^[s" insert-sudo
 
+    alias updates="sudo apt-get update; sudo apt-get upgrade; sudo apt-get dist-upgrade;"
+
 ### end aliases
