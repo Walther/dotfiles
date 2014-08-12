@@ -11,6 +11,10 @@ export SHELL=zsh
 # Grrrrr.
 setopt NO_BEEP
 
+# Ctrl-arrows are better than alt-b and whatever.
+bindkey ';5D' emacs-backward-word
+bindkey ';5C' emacs-forward-word
+
 # easier, better tabcomplete
 setopt COMPLETE_IN_WORD
 zstyle ':completion:*' completer _complete _match _approximate
