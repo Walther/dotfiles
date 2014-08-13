@@ -65,6 +65,9 @@ unset AUTO_MENU
     # rekey; reloading the keymaps and xmodmaps of my liking after (re)plugging a keyboard
     alias rekey="setxkbmap -layout fi -option caps:escape,compose:menu,nbsp:none; xmodmap -e 'keycode 134 = Super_R'"
 
+    # reload backround - necessary after xrandr things
+    alias rebg="feh --bg-fill ~/git/dotfiles/not-just-a-soldier.jpg"
+
     # alt-s to insert sudo in beginning of line
     insert_sudo () { zle beginning-of-line; zle -U "sudo " }
     zle -N insert-sudo insert_sudo
