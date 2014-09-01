@@ -7,6 +7,7 @@ ZLE_RPROMPT_INDENT=0
 # Some essentials
 export EDITOR=vim
 export SHELL=zsh
+export TERM=xterm-256color # Because apparently 'rxvt-unicode-256color' is either "too long" or "unknown terminal type".
 
 # Grrrrr.
 setopt NO_BEEP
