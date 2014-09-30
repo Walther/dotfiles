@@ -2,7 +2,7 @@
 # My preferred software + some customizations. Requires sudo.
 
 sudo apt-get update;
-sudo apt-get install cmatrix feh ghc git htop i3 i3-wm iotop lightdm nethogs nmap rxvt-unicode-256color scrot tmux tree vim-nox xclip xcompmgr xsel zsh;
+sudo apt-get install cmatrix feh ghc git htop i3 i3-wm iotop lightdm nethogs nmap rxvt-unicode-256color scrot tmux tree vim-nox xcompmgr xsel zsh;
 
 # update dmenu to use the xft version. Sidenote, why wasn't this feature merged but put as an alternative?
 sudo update-alternatives --set dmenu /usr/bin/dmenu.xft;
