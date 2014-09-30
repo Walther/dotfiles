@@ -8,6 +8,7 @@ ZLE_RPROMPT_INDENT=0
 export EDITOR=vim
 export SHELL=zsh
 export TERM=xterm-256color # Because apparently 'rxvt-unicode-256color' is either "too long" or "unknown terminal type".
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # removed '/' from the list; ctrl-w on ls foo/bar/baz only removes baz
 
 # Grrrrr.
 setopt NO_BEEP
