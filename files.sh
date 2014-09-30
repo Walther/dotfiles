@@ -18,10 +18,10 @@ git clone https://github.com/edkolev/promptline.vim ~/.vim/bundle/promptline.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/vim-nerdtree-tabs
 
-mkdir -p /tmp/vim-molokai
-git clone https://github.com/tomasr/molokai /tmp/vim-molokai
+mkdir -p ~/tmp/vim-molokai
+git clone https://github.com/tomasr/molokai ~/tmp/vim-molokai
 mkdir -p ~/.vim/colors/
-cp /tmp/vim-molokai/colors/molokai.vim ~/.vim/colors/
+cp ~/tmp/vim-molokai/colors/molokai.vim ~/.vim/colors/
 cp vimrc ~/.vimrc
 
 # i3 window manager
@@ -30,9 +30,9 @@ cp i3.conf ~/.i3/config
 
 # Fonts
 mkdir -p ~/.fonts/
-mkdir -p /tmp/powerline-fonts
-git clone https://github.com/Lokaltog/powerline-fonts /tmp/powerline-fonts
-cp -R /tmp/powerline-fonts/ ~/.fonts/
+mkdir -p ~/tmp/powerline-fonts
+git clone https://github.com/Lokaltog/powerline-fonts ~/tmp/powerline-fonts
+cp -R ~/tmp/powerline-fonts/ ~/.fonts/
 fc-cache -vf ~/.fonts/
 
 # Shell
