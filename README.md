@@ -15,12 +15,7 @@ Screenshot:
 ![screenshot](dotfiles.png)
 
 ## How to use
-Currently there are two scripts:
-- `install.sh`, which installs a list of commonly used applications and tools
-- `files.sh`, which pulls stuff from remote repositories and puts all the files in place
-
-I recommend reading both scripts before running.
-
-## Todo
-- Create a proper installer script
-- Add "update" functionality
+Run the script:
+- `./script install`, which installs a list of commonly used applications and tools specified in `requirements`
+- `./script update`, which puts all the files in place
+- `./script ext_software`, which installs some software external to default repositories (Optional)
