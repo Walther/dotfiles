@@ -1,0 +1,31 @@
+# Desktop & utilities
+feh                     # image viewer, handles desktop bg
+i3-wm                   # my favourite tiling window manager
+i3lock                  # a pretty good-looking lockscreen.
+lightdm                 # a very minimalistic login manager
+scrot                   # screenshot utility
+xcompmgr                # compositing manager; transparencies
+xsel                    # clipboard thingy
+
+# Shell / CLI
+rxvt-unicode-256color   # terminal emulator
+tmux                    # terminal multiplexer
+tree                    # view file/folder hierarchies as trees
+vim-nox                 # vi improved, no gui
+zsh                     # z shell
+
+# Admin tools
+curl                    # download files from cli, often required by scripts
+htop                    # interactive process viewer
+iotop                   # IO load viewer
+lshw                    # list hardware information
+nethogs                 # network load viewer
+nmap                    # network scanning utility
+pwgen                   # password generator
+unzip                   # unpack .zip files
+wget                    # download files from cli
+zip                     # create .zip files
+
+# Personal favourites
+ghc                     # Glasgow Haskell Compiler. Haskell is <3
+cabal-install           # a sort of a "package manager" for Haskell
