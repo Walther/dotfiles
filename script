@@ -1,0 +1,106 @@
+#!/bin/bash
+
+# Specs:
+# ./script install
+#     - installs software described in requirements
+# ./script update
+#     - calls git pull in dotfiles repo
+#     - puts all the files in place
+# ./script ext_software
+#     - installs software external to repositories and adds alternatives
+
+# Main functions
+
+function install {
+    echo "Installing software:";
+    echo $(parse_software);
+    sudo apt-get install $(parse_software);
+}
+
+function update {
+    echo "Vacuuming the newest dotfiles over the intertubes"
+    git pull;
+    files;
+}
+
+# Helper functions
+
+function parse_software {
+    echo `sed -e 's/^#(.*)//g; s/\s*#.*$//g' requirements`;
+}
+
+function log_msg() {
+    RED=$(tput setaf 1)
+    GREEN=$(tput setaf 2)
+    NORMAL=$(tput sgr0)
+    MSG="$1"
+    let COL=$(tput cols)-${#MSG}+${#GREEN}+${#NORMAL}
+
+    printf "%s%${COL}s" "$MSG" "[$GREEN OK $NORMAL]"
+}
+
+function files {
+    # Vim
+    mkdir -p ~/.vim/backup
+
+    mkdir -p ~/dotfiletemp/vim-molokai
+    git clone --quiet https://github.com/tomasr/molokai ~/dotfiletemp/vim-molokai
+    mkdir -p ~/.vim/colors/
+    cp ~/dotfiletemp/vim-molokai/colors/molokai.vim ~/.vim/colors/
+    cp vimrc ~/.vimrc
+    log_msg "Vim essentials in place"
+
+    # i3 window manager
+    mkdir -p ~/.i3/
+    cp i3.conf ~/.i3/config
+    log_msg "Tossed around i3 window manager configurations"
+
+    # Fonts
+    mkdir -p ~/.fonts/
+    mkdir -p ~/dotfiletemp/powerline-fonts
+    git clone --quiet https://github.com/Lokaltog/powerline-fonts ~/dotfiletemp/powerline-fonts
+    rsync -a --exclude='.git' ~/dotfiletemp/powerline-fonts/ ~/.fonts/
+    fc-cache -f ~/.fonts/
+    log_msg "Re-cached font awesomeness"
+
+    # Shell
+    cp zshrc ~/.zshrc
+    cp shell_prompt.sh ~/.shell_prompt.sh
+    log_msg "Boosted your shell efficiency"
+
+    # Cleanup
+    rm -rf ~/dotfiletemp
+    log_msg "Took out the trash"
+}
+
+function ext_software {
+    # Update alternatives
+    sudo update-alternatives --set dmenu /usr/bin/dmenu.xft;
+    log_msg
+
+    # Chrome
+    mkdir -p ~/Downloads
+    cd ~/Downloads
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+    # Sublime Text
+    cd ~/Downloads
+    wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3064_amd64.deb
+    sudo dpkg -i sublime-text_build-3064_amd64.deb
+}
+
+case $1 in
+"install")
+    install
+;;
+"update")
+    update
+;;
+"ext_software")
+    ext_software
+;;
+*)
+    echo "Usage: $0 update/install/ext_software"
+;;
+esac
