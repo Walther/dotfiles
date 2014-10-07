@@ -1,8 +1,0 @@
-# Smart case!
---smart-case
-# Ignore .cache dir, which is ...well, a cache dir
---ignore-dir=.cache
-# And ignore .config dir, I'll know when I need to edit something there
---ignore-dir=.config
-# ...and ignore .local, which is also usually a bit silly.
---ignore-dir=.local
