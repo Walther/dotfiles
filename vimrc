@@ -18,8 +18,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'edkolev/promptline.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()               " required
@@ -77,6 +76,9 @@ inoremap <C-c> <ESC>
 " Shift-tab as deindent; familiar from e.g. Sublime text
 inoremap <S-Tab> <C-d>
 
+" Ctrl-w closes a 'tab' in normal mode
+nmap <C-w> :bdelete<CR>
+
 "-- End Custom Keybindings --
 
 "-- Custom :commands --
@@ -97,14 +99,15 @@ cmap w!! w !sudo tee > /dev/null %
 
 "-- Plugin-specific stuff --
 
-" NERDtree
-let g:nerdtree_tabs_open_on_console_startup=1
-
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "powerlineish"
 let g:airline#extensions#tabline#enabled = 1
 " Fix molokai/monokai background color, as my urxvt has the correct bg :3
 hi Normal ctermbg=None
+
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 "-- End Plugin-specific stuff
