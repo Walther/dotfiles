@@ -18,8 +18,9 @@ function install {
 }
 
 function update {
-    echo "Vacuuming the newest dotfiles over the intertubes"
-    git pull;
+    log_msg "Starting up!"
+    git pull --quiet;
+    log_msg "Vacuumed the newest dotfiles over the intertubes"
     files;
 }
 
@@ -59,6 +60,7 @@ function files {
     log_msg "Tossed around i3 window manager configurations"
 
     # Fonts
+    log_msg "Starting a bigger task: fonts"
     mkdir -p ~/.fonts/
     mkdir -p ~/dotfiletemp/powerline-fonts
     git clone --quiet https://github.com/Lokaltog/powerline-fonts ~/dotfiletemp/powerline-fonts
@@ -70,6 +72,22 @@ function files {
     cp zshrc ~/.zshrc
     cp shell_prompt.sh ~/.shell_prompt.sh
     log_msg "Boosted your shell efficiency"
+
+    # Git
+    cp gitconfig ~/.gitconfig
+    log_msg "Tweaked Git powers"
+
+    # Xdefaults
+    cp Xdefaults ~/.Xdefaults
+    log_msg "Extracted Xdefaults serum"
+
+    # Screenrc
+    cp screenrc ~/.screenrc
+    log_msg "Matching the screenrc"
+
+    # Tmux
+    cp tmux.conf ~/.tmux.conf
+    log_msg "Multiplexed multiplexers"
 
     # Cleanup
     rm -rf ~/dotfiletemp
