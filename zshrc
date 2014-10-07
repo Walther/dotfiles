@@ -57,6 +57,7 @@ unset AUTO_MENU
 ### Aliases <3
     alias ls="ls -CF --color=auto"
     alias ll="ls -halF --color=auto"
+    alias la="ls -halF --color=auto"
 
     # ls after cd
     chpwd() ls -CF --color=auto
@@ -75,6 +76,7 @@ unset AUTO_MENU
     zle -N insert-sudo insert_sudo
     bindkey "^[s" insert-sudo
 
+    # A nice alias to run updates on the machine
     alias updates="sudo apt-get update; sudo apt-get upgrade; sudo apt-get dist-upgrade;"
 
 ### end aliases
