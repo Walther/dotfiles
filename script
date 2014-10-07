@@ -89,6 +89,10 @@ function files {
     cp tmux.conf ~/.tmux.conf
     log_msg "Multiplexed multiplexers"
 
+    # ack-grep
+    cp ackrc ~/.ackrc
+    log_msg "Greater grep configured"
+
     # Cleanup
     rm -rf ~/dotfiletemp
     log_msg "Took out the trash"
