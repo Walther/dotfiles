@@ -70,7 +70,7 @@ function files {
 
     # Shell
     cp zshrc ~/.zshrc
-    cp shell_prompt.sh ~/.shell_prompt.sh
+    cp promptline.sh ~/.promptline.sh
     log_msg "Boosted your shell efficiency"
 
     # Git

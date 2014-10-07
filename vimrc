@@ -110,4 +110,12 @@ hi Normal ctermbg=None
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" vim-promptline
+let g:promptline_theme = 'airline'
+" sections (a, b, c, x, y, z, warn) are optional
+let g:promptline_preset = {
+        \'a' : [ promptline#slices#host() ],
+        \'b' : [ promptline#slices#user() ],
+        \'c' : [ promptline#slices#cwd(), promptline#slices#vcs_branch() ]}
+
 "-- End Plugin-specific stuff
