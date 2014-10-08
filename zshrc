@@ -20,7 +20,7 @@ setopt COMPLETE_IN_WORD
 zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:approximate:*' max-errors 3 numeric
 setopt BASH_AUTO_LIST
-unset AUTO_MENU
+unsetopt AUTO_MENU
 
 ### Borrowed from http://matt.blissett.me.uk/linux/zsh/zshrc
     # Say how long a command took, if it took more than 30 seconds
