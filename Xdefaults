@@ -39,7 +39,13 @@ urxvt*background : [85]#272822
 
 
 ! Correcting ctrl-arrows behaviour in Vim
-urxvt.keysym.Control-Up:    \033[1;5A
-urxvt.keysym.Control-Down:  \033[1;5B
-urxvt.keysym.Control-Left:  \033[1;5D
-urxvt.keysym.Control-Right: \033[1;5C
+urxvt.keysym.Control-Up       : \033[1;5A
+urxvt.keysym.Control-Down     : \033[1;5B
+urxvt.keysym.Control-Left     : \033[1;5D
+urxvt.keysym.Control-Right    : \033[1;5C
+
+! Correcting alt-arrows behaviour in Vim
+urxvt.keysym.M-Up             : \033[1;3A
+urxvt.keysym.M-Down           : \033[1;3B
+urxvt.keysym.M-Right          : \033[1;3C
+urxvt.keysym.M-Left           : \033[1;3D
