@@ -67,8 +67,10 @@ endif
 
 " ctrl-pgup -> previous buffer
 map [5^ :bprev<CR>
+map <C-PageUp> :bprev<CR>
 " ctrl-pgdn -> next buffer
 map [6^ :bnext<CR>
+map <C-PageDown> :bnext<CR>
 
 " C-c as <ESC>
 inoremap <C-c> <ESC>

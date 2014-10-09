@@ -9,6 +9,8 @@ urxvt.keysym.C-C:           perl:clipboard:copy
 
 ! Powerline-patched font
 urxvt.font:        xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
+xterm*faceName:    xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
+
 
 ! urxvt Monokai theme / color scheme
 urxvt.depth:       32;
