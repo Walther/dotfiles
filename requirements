@@ -1,4 +1,5 @@
 # Desktop & utilities
+dmenu                   # text-based launcher
 feh                     # image viewer, handles desktop bg
 i3-wm                   # my favourite tiling window manager
 i3lock                  # a pretty good-looking lockscreen.
