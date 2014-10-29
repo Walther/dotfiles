@@ -1,9 +1,11 @@
 # Desktop & utilities
+dmenu                   # text-based launcher
 feh                     # image viewer, handles desktop bg
 i3-wm                   # my favourite tiling window manager
 i3lock                  # a pretty good-looking lockscreen.
 lightdm                 # a very minimalistic login manager
 scrot                   # screenshot utility
+x11-xserver-utils       # kinda obvious requirement, e.g. xrandr
 xcompmgr                # compositing manager; transparencies
 xsel                    # clipboard thingy
 
