@@ -75,6 +75,6 @@ unsetopt AUTO_MENU
     bindkey "^[s" insert-sudo
 
     # A nice alias to run updates on the machine
-    alias updates="sudo apt-get update; sudo apt-get upgrade; sudo apt-get dist-upgrade;"
+    alias updates="sudo apt update; sudo apt full-upgrade;"
 
 ### end aliases
