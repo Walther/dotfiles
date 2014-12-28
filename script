@@ -6,9 +6,6 @@
 # ./script update
 #     - calls git pull in dotfiles repo
 #     - puts all the files in place
-# ./script ext_software
-#     - installs software external to repositories and adds alternatives
-
 # Main functions
 
 function install {
@@ -94,23 +91,6 @@ function files {
     log_msg "Took out the trash"
 }
 
-function ext_software {
-    # Update alternatives
-    sudo update-alternatives --set dmenu /usr/bin/dmenu.xft;
-    log_msg
-
-    # Chrome
-    mkdir -p ~/Downloads
-    cd ~/Downloads
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    sudo dpkg -i google-chrome-stable_current_amd64.deb
-
-    # Sublime Text
-    cd ~/Downloads
-    wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3064_amd64.deb
-    sudo dpkg -i sublime-text_build-3064_amd64.deb
-}
-
 case $1 in
 "install")
     install
@@ -118,10 +98,7 @@ case $1 in
 "update")
     update
 ;;
-"ext_software")
-    ext_software
-;;
 *)
-    echo "Usage: $0 update/install/ext_software"
+    echo "Usage: $0 update/install"
 ;;
 esac
