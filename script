@@ -11,7 +11,7 @@
 function install {
     echo "Installing software:";
     echo $(parse_software);
-    sudo pacman -S $(parse_software);
+    sudo apt-get install $(parse_software);
 }
 
 function update {
