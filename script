@@ -16,8 +16,6 @@ function install {
 
 function update {
     log_msg "Starting up!"
-    git pull --quiet;
-    log_msg "Vacuumed the newest dotfiles over the intertubes"
     files;
 }
 
