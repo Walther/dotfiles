@@ -4,9 +4,9 @@ dotfiles
 My "dotfiles".
 
 
-- terminal: [rxvt-unicode-256color](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- terminals: [rxvt-unicode-256color](http://software.schmorp.de/pkg/rxvt-unicode.html) and [xterm](http://invisible-island.net/xterm/) where urxvt isn't available
 - shell: [zsh](http://en.wikipedia.org/wiki/Z_shell), with the help of [promptline.vim](https://github.com/edkolev/promptline.vim)
-- shell multiplexer: [tmux](http://tmux.sourceforge.net/), with [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) 
+- shell multiplexer: [tmux](http://tmux.sourceforge.net/), with [tmuxline.vim](https://github.com/edkolev/tmuxline.vim)
 - editors: [Sublime Text 3](http://sublimetext.com/3), [vim](http://www.vim.org/)
 - tiling window manager: [i3](http://i3wm.org/)
 - fonts: DejaVu Sans, DejaVu Sans Mono - with [Powerline patch](https://github.com/Lokaltog/powerline-fonts) for fancy glyphs)
