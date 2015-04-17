@@ -10,7 +10,7 @@ My "dotfiles".
 - editors: [Sublime Text 3](http://sublimetext.com/3), [vim](http://www.vim.org/)
 - tiling window manager: [i3](http://i3wm.org/)
 - fonts: DejaVu Sans, DejaVu Sans Mono - with [Powerline patch](https://github.com/Lokaltog/powerline-fonts) for fancy glyphs)
-- color theme: Monokai (see [Xdefaults](Xdefaults))
+- color theme: Monokai (see [Xresources](Xresources))
 - and a bundle of other often-used software specified in [requirements](requirements)
 
 Screenshot:

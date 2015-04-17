@@ -72,9 +72,9 @@ function files {
     cp gitconfig ~/.gitconfig
     log_msg "Tweaked Git powers"
 
-    # Xdefaults
-    cp Xdefaults ~/.Xdefaults
-    log_msg "Extracted Xdefaults serum"
+    # Xresources
+    cp Xresources ~/.Xresources
+    log_msg "Extracted Xresources serum"
 
     # Screenrc
     cp screenrc ~/.screenrc

@@ -49,3 +49,7 @@ urxvt.keysym.M-Up             : \033[1;3A
 urxvt.keysym.M-Down           : \033[1;3B
 urxvt.keysym.M-Right          : \033[1;3C
 urxvt.keysym.M-Left           : \033[1;3D
+
+! Correcting xterm behaviour, when not using urxvt
+XTerm*metaSendsEscape: true
+
