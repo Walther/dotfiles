@@ -52,4 +52,4 @@ urxvt.keysym.M-Left           : \033[1;3D
 
 ! Correcting xterm behaviour, when not using urxvt
 XTerm*metaSendsEscape: true
-
+XTerm*VT100*translations: #override\nShift Ctrl <KeyPress> v:insert-selection(CLIPBOARD)\nShift Ctrl <KeyPress> c:select-set(CLIPBOARD)
