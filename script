@@ -66,6 +66,8 @@ function files {
     # Shell
     cp zshrc ~/.zshrc
     cp promptline.sh ~/.promptline.sh
+    mkdir -p ~/.urxvt/ext/
+    git clone https://github.com/muennich/urxvt-perls ~/.urxvt/ext
     log_msg "Boosted your shell efficiency"
 
     # Git
