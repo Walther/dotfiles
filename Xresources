@@ -8,10 +8,8 @@ urxvt.keysym.C-V:           perl:clipboard:paste
 urxvt.keysym.C-C:           perl:clipboard:copy
 
 ! Powerline-patched font
-urxvt.font:        xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
-xterm*faceName:    xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull
-! bugfix launchpad #309792
-xft.rgba: none
+urxvt.font:        xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull:rgba=none
+xterm*faceName:    xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull:rgba=none
 
 ! urxvt Monokai theme / color scheme
 urxvt.depth:       32;
