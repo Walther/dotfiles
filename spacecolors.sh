@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Borrowed from https://github.com/mfin/dotfiles/blob/master/scripts/spacecolors.sh with <3
+# Borrowed with <3 from https://github.com/mfin/dotfiles/blob/master/scripts/spacecolors.sh
 
 
 #ANSI color scheme script featuring Space Invaders
