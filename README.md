@@ -18,9 +18,7 @@ Screenshot:
 
 ## How to use
 Run the script:
-- `./script install`, which installs a list of commonly used applications and tools specified in `requirements`
-- `./script update`, which puts all the files in place
-- `./script ext_software`, which installs some software external to default repositories (Optional)
+- `./magic`, which puts all the files in place
 
 ## Licence
 The Unlicence - this is free and unencumbered software released into the public domain.
