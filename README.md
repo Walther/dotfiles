@@ -24,3 +24,4 @@ Run the script:
 
 ## Licence
 The Unlicence - this is free and unencumbered software released into the public domain.
+The wallpaper, "not-just-a-soldier.jpg", a photo I'm rather proud of, is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
