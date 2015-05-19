@@ -11,12 +11,15 @@ My "dotfiles".
 - tiling window manager: [i3](http://i3wm.org/)
 - fonts: DejaVu Sans, DejaVu Sans Mono - with [Powerline patch](https://github.com/Lokaltog/powerline-fonts) for fancy glyphs)
 - color theme: Monokai (see [Xresources](Xresources))
-- and a bundle of other often-used software specified in [requirements](requirements)
 
 Screenshot:
 ![screenshot](dotfiles.png)
 
 ## How to use
+
+Optionally, take a Debian installer and give the `preseed.cfg` to it as a parameter. This installs all the requirements.
+Alternatively, just look for the software install line in the `preseed.cfg` and install manually in your own environment.
+
 Run the script:
 - `./magic`, which puts all the files in place
 
