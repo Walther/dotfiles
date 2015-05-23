@@ -77,4 +77,7 @@ unsetopt AUTO_MENU
     # A nice alias to run updates on the machine
     alias updates="sudo apt update; sudo apt full-upgrade;"
 
+    # sudo apt-get install
+    alias sagi="sudo apt-get install"
+
 ### end aliases
