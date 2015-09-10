@@ -80,4 +80,7 @@ unsetopt AUTO_MENU
     # sudo apt-get install
     alias sagi="sudo apt-get install"
 
+    # Fix tmux + irssi screen refresh bug on screens bigger than 40char
+    alias irssi='TERM=screen-256color irssi'
+
 ### end aliases
