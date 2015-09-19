@@ -1,3 +1,7 @@
+# Add some local bin folders to PATH
+export PATH=$PATH:~/.bin
+export PATH=$PATH:~/.local/bin
+
 # Created by promptline.vim which utilizes vim-airline on monokai theme
 source ~/.promptline.sh
 ZLE_RPROMPT_INDENT=0
