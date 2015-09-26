@@ -125,7 +125,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:promptline_theme = 'airline'
 " sections (a, b, c, x, y, z, warn) are optional
 let g:promptline_preset = {
-        \'a' : [ promptline#slices#host() ],
+        \'a' : [ '$(hostname)' ],
         \'b' : [ promptline#slices#user() ],
         \'c' : [ promptline#slices#cwd(), promptline#slices#vcs_branch() ]}
 
