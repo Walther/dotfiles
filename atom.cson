@@ -1,0 +1,13 @@
+welcome:
+  showOnStartup: false
+core:
+  autoHideMenuBar: true
+  projectHome: "/home/walther/git"
+editor:
+  invisibles: {}
+  fontFamily: "DejaVu Sans Mono for Powerline"
+  scrollPastEnd: true
+  showInvisibles: true
+  showIndentGuide: true
+  softWrap: true
+
