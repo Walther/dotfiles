@@ -38,6 +38,11 @@ mkdir -p ~/.emacs.d
 cp emacs ~/.emacs
 log_msg "Emacs essentials in place"
 
+# atom
+mkdir -p ~/.atom
+cp atom.cson ~/.atom/config.cson
+log_msg "Atom essentials in place"
+
 # i3 window manager
 mkdir -p ~/.i3/
 cp i3.conf ~/.i3/config
