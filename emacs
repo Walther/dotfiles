@@ -32,6 +32,7 @@ Return a list of installed packages or nil for every skipped package."
  'monokai-theme
  'powerline
  'haskell-mode
+ 'ido-vertical-mode
  )
 
 ;; Package-specific enables
