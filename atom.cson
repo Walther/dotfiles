@@ -1,13 +1,14 @@
-welcome:
-  showOnStartup: false
-core:
-  autoHideMenuBar: true
-  projectHome: "/home/walther/git"
-editor:
-  invisibles: {}
-  fontFamily: "DejaVu Sans Mono for Powerline"
-  scrollPastEnd: true
-  showInvisibles: true
-  showIndentGuide: true
-  softWrap: true
-
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    autoHideMenuBar: true
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontFamily: "DejaVu Sans Mono for Powerline"
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
