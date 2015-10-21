@@ -55,8 +55,6 @@ unsetopt AUTO_MENU
 
 
 ### Aliases <3
-    # Typing errors...
-    alias 'cd..=cd ..'
 
     # ls stuff
     alias ls="ls -CF --color=auto"
@@ -65,6 +63,9 @@ unsetopt AUTO_MENU
 
     # ls after cd
     chpwd() ls -CF --color=auto
+
+    # Typing errors...
+    alias 'cd..=cd ..'
 
     # "irkki", old habits die slow...
     alias irkki="tmux attach -d"
@@ -89,7 +90,7 @@ unsetopt AUTO_MENU
     # Fix tmux + irssi screen refresh bug on screens bigger than 40char
     alias irssi='TERM=screen-256color irssi'
 
-    # file count
-    alias count='ls -1 | wc -l'
+    # file count, accepts parameters
+    count() { ls -1 "$@" | wc -l }
 
 ### end aliases
