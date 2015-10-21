@@ -30,8 +30,6 @@ unsetopt AUTO_MENU
     # Say how long a command took, if it took more than 30 seconds
     export REPORTTIME=30
 
-    # Typing errors...
-    alias 'cd..=cd ..'
 
 ### end borrowed
 
@@ -57,6 +55,10 @@ unsetopt AUTO_MENU
 
 
 ### Aliases <3
+    # Typing errors...
+    alias 'cd..=cd ..'
+
+    # ls stuff
     alias ls="ls -CF --color=auto"
     alias ll="ls -halF --color=auto"
     alias la="ls -halF --color=auto"
@@ -86,5 +88,8 @@ unsetopt AUTO_MENU
 
     # Fix tmux + irssi screen refresh bug on screens bigger than 40char
     alias irssi='TERM=screen-256color irssi'
+
+    # file count
+    alias count='ls -1 | wc -l'
 
 ### end aliases
