@@ -57,7 +57,7 @@ unsetopt AUTO_MENU
 ### Aliases <3
 
     # ls stuff
-    alias ls="ls -CFsh --color=auto"
+    alias ls="ls -CF --color=auto"
     alias ll="ls -halF --color=auto"
     alias la="ls -halF --color=auto"
 
