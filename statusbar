@@ -1,0 +1,26 @@
+general {
+        colors = true
+        interval = 1
+        output_format = i3bar
+}
+
+order += "battery 1"
+order += "load"
+order += "time"
+
+battery 1 {
+        format = "%status %percentage %remaining"
+        hide_seconds = true
+}
+
+time {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
+load {
+        format = "Load: %1min"
+}
+
+disk "/" {
+        format = "%free"
+}
