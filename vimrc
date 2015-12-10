@@ -64,6 +64,11 @@ endif
 " Enable cursor crosshair
 hi CursorLine   cterm=NONE ctermbg=235
 hi CursorColumn cterm=NONE ctermbg=235
+" Disable toolbars, menus, scrollbars in gvim
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
 "-- End General options --
 
 "-- Custom Keybindings --
@@ -115,7 +120,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = "powerlineish"
 let g:airline#extensions#tabline#enabled = 1
 " Fix molokai/monokai background color, as my urxvt has the correct bg :3
-hi Normal ctermbg=None
+" hi Normal ctermbg=None
 
 " ctrlp
 let g:ctrlp_map = '<c-p>'
