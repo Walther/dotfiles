@@ -46,6 +46,8 @@ log_msg "Atom essentials in place"
 # i3 window manager
 mkdir -p ~/.i3/
 cp i3.conf ~/.i3/config
+git clone --quiet https://github.com/olemartinorg/i3-alternating-layout ~/dotfiletemp/i3-alternating-layout
+cp ~/dotfiletemp/i3-alternating-layout/alternating_layouts.py ~/.i3alternate.py
 log_msg "Tossed around i3 window manager configurations"
 
 # Fonts
