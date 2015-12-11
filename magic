@@ -52,7 +52,7 @@ log_msg "Tossed around i3 window manager configurations"
 log_msg "Starting a bigger task: fonts"
 mkdir -p ~/.fonts/
 mkdir -p ~/dotfiletemp/powerline-fonts
-git clone --quiet https://github.com/Lokaltog/powerline-fonts ~/dotfiletemp/powerline-fonts
+git clone --quiet https://github.com/powerline/fonts ~/dotfiletemp/powerline-fonts
 rsync -a --exclude='.git' ~/dotfiletemp/powerline-fonts/ ~/.fonts/
 fc-cache -f ~/.fonts/
 log_msg "Re-cached font awesomeness"
