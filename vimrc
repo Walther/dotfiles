@@ -135,3 +135,6 @@ let g:promptline_preset = {
         \'c' : [ promptline#slices#cwd(), promptline#slices#vcs_branch() ]}
 
 "-- End Plugin-specific stuff
+
+" Fix font on gvim
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
