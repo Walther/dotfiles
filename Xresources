@@ -20,21 +20,42 @@ urxvt*background : [85]#272822
 *.foreground : #ffffff
 *.cursorColor: #80ff00
 
+! Walther ColorScheme - inspired by Monokai
+
+! Near-black
 *.color0     : #101010
-*.color1     : #960050
-*.color2     : #66aa11
-*.color3     : #c47f2c
+! Basic pink
+*.color1     : #f92672
+! Basic green
+*.color2     : #80ff00
+! Orange
+*.color3     : #fd971f
+! Navy // Can be replaced with better color?
 *.color4     : #30309b
+! Purple <3
 *.color5     : #7e40a5
-*.color6     : #89b6e2
+! Blue
+*.color6     : #4eb4fa
+! Plain grey // Can be replaced with better color?
 *.color7     : #9999aa
-*.color8     : #75715E
-*.color9     : #ff0090
-*.color10    : #80ff00
-*.color11    : #ffba68
+! Comment gray
+*.color8     : #75715e
+
+! BRIGHT/LIGHT VARIANTS
+
+! Light Pink // Can be replaced with better color?
+*.color9     : #f94888
+! Light green // // Can be replaced with better color?
+*.color10    : #66aa11
+! Light orange == yellow
+*.color11    : #f6f080
+! Light Navy // Can be replaced with better color?
 *.color12    : #5f5fee
+! Light purple
 *.color13    : #bb88dd
-*.color14    : #4eb4fa
+! Light blue
+*.color14    : #89b6e2
+! White // Can be replaced with better color?
 *.color15    : #ffffff
 
 
