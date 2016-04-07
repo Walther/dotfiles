@@ -15,7 +15,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " my favourite plugins
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'edkolev/promptline.vim'
 Plugin 'kien/ctrlp.vim'
