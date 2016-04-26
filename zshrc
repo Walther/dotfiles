@@ -9,7 +9,6 @@ ZLE_RPROMPT_INDENT=0
 # Some essentials
 export EDITOR=vim
 export SHELL=zsh
-export TERM=xterm-256color # Because apparently 'rxvt-unicode-256color' is either "too long" or "unknown terminal type".
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # removed '/' from the list; ctrl-w on ls foo/bar/baz only removes baz
 
 # Grrrrr.
@@ -18,9 +17,48 @@ setopt NO_BEEP
 # Even as a vim user, emacs mode makes sense in shell
 bindkey -e
 
+# create a zkbd compatible hash;
+# to add other keys to this hash, see: man 5 terminfo
+typeset -A key
+
+key[Home]=${terminfo[khome]}
+key[End]=${terminfo[kend]}
+key[Insert]=${terminfo[kich1]}
+key[Delete]=${terminfo[kdch1]}
+key[Up]=${terminfo[kcuu1]}
+key[Down]=${terminfo[kcud1]}
+key[Left]=${terminfo[kcub1]}
+key[Right]=${terminfo[kcuf1]}
+key[PageUp]=${terminfo[kpp]}
+key[PageDown]=${terminfo[knp]}
+
+# setup key accordingly
+[[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
+[[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
+[[ -n "${key[Insert]}"  ]]  && bindkey  "${key[Insert]}"  overwrite-mode
+[[ -n "${key[Delete]}"  ]]  && bindkey  "${key[Delete]}"  delete-char
+[[ -n "${key[Up]}"      ]]  && bindkey  "${key[Up]}"      up-line-or-history
+[[ -n "${key[Down]}"    ]]  && bindkey  "${key[Down]}"    down-line-or-history
+[[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
+[[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
+
+# Finally, make sure the terminal is in application mode, when zle is
+# active. Only then are the values from $terminfo valid.
+function zle-line-init () {
+    echoti smkx
+}
+function zle-line-finish () {
+    echoti rmkx
+}
+zle -N zle-line-init
+zle -N zle-line-finish
+
 # Ctrl-arrows are better than alt-b and whatever.
 bindkey ';5D' emacs-backward-word
 bindkey ';5C' emacs-forward-word
+bindkey '^[[5D' emacs-backward-word
+bindkey '^[[5C' emacs-forward-word
+
 
 # easier, better tabcomplete
 setopt COMPLETE_IN_WORD
@@ -30,8 +68,8 @@ setopt BASH_AUTO_LIST
 unsetopt AUTO_MENU
 
 ### Borrowed from http://matt.blissett.me.uk/linux/zsh/zshrc
-    # Say how long a command took, if it took more than 30 seconds
-    export REPORTTIME=30
+# Say how long a command took, if it took more than 30 seconds
+export REPORTTIME=30
 
 
 ### end borrowed
