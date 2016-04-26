@@ -12,10 +12,6 @@ urxvt.keysym.C-C:           perl:clipboard:copy
 urxvt.font:        xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull:rgba=none
 xterm*faceName:    xft:DejaVu Sans Mono for Powerline:size=10:hintstyle=hintfull:rgba=none
 
-! Colors!
-xterm*termName: xterm-256color
-urxvt*termName: rxvt-unicode
-
 ! urxvt Monokai theme / color scheme
 urxvt.depth:       32;
 urxvt.transparent: true;
