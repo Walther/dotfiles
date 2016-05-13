@@ -1,4 +1,6 @@
 {
+    "theme": "Otto Monokai.sublime-theme",
+    "theme_otto_accent_orange": true,
     "color_scheme": "Packages/Monokai Extended/Monokai Extended Bright.tmTheme",
     "font_face": "DejaVu Sans Mono for Powerline",
     "font_size": 12,
@@ -8,4 +10,3 @@
     "word_wrap": true,
     "trim_trailing_white_space_on_save": true
 }
-
