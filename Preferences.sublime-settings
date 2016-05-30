@@ -7,8 +7,8 @@
     "Vintage"
   ],
   "tab_size": 2,
-  "theme": "Otto Monokai.sublime-theme",
-  "theme_otto_accent_orange": true,
+  "theme": "Boxy Monokai.sublime-theme",
+  "theme_accent_orange": true,
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
   "word_wrap": true
