@@ -4,10 +4,16 @@ general {
         output_format = i3bar
 }
 
+order += "battery 0"
 order += "battery 1"
 order += "load"
 order += "time"
 
+battery 0 {
+        format = "%status %percentage %remaining"
+        hide_seconds = true
+        format_down = ""
+}
 battery 1 {
         format = "%status %percentage %remaining"
         hide_seconds = true
