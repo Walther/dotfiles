@@ -67,6 +67,9 @@ zstyle ':completion:*:approximate:*' max-errors 3 numeric
 setopt BASH_AUTO_LIST
 unsetopt AUTO_MENU
 
+# git autocomplete
+autoload -Uz compinit && compinit
+
 ### Borrowed from http://matt.blissett.me.uk/linux/zsh/zshrc
 # Say how long a command took, if it took more than 30 seconds
 export REPORTTIME=30
