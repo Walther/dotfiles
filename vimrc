@@ -20,6 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'edkolev/promptline.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/vim-easy-align'
 
 " All of your Plugins must be added before the following line
 call vundle#end()               " required
@@ -42,8 +43,8 @@ set noerrorbells                " Grrrr.
 set visualbell t_vb=            " There we go.
 set autoindent                  " Copy indent from current line when starting a new line
 set expandtab                   " Use spaces instead of tabs
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set hlsearch                    " Highlight search results
 set ignorecase                  " When doing a search, ignore the case of letters
 set smartcase                   " Override the ignorecase option if the search pattern contains upper case letters
