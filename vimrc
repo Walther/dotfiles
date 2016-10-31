@@ -135,6 +135,11 @@ let g:promptline_preset = {
         \'a' : [ '$(hostname)' ],
         \'b' : [ promptline#slices#user() ],
         \'c' : [ promptline#slices#cwd(), promptline#slices#vcs_branch() ]}
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga :EasyAlign
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga :EasyAlign
 
 "-- End Plugin-specific stuff
 
