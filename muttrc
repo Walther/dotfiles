@@ -1,0 +1,5 @@
+# Enable header editing on the fly
+set edit_headers=yes
+# Scroll within message instead of between them
+bind pager <up> previous-line
+bind pager <down> next-line

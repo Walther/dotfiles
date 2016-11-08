@@ -83,6 +83,14 @@ log_msg "Matching the screenrc"
 cp tmux.conf ~/.tmux.conf
 log_msg "Multiplexed multiplexers"
 
+# npmrc
+cp npmrc ~/.npmrc
+log_msg "Put npmrc in place"
+
+# muttrc
+cp muttrc ~/.muttrc
+log_msg "Put muttrc in place"
+
 # Cleanup
 rm -rf ~/dotfiletemp
 log_msg "Took out the trash"
