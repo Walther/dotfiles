@@ -1,6 +1,8 @@
 # Add some local bin folders to PATH
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.local/bin
+export NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$NPM_PACKAGES/bin:$PATH"
 
 # Created by promptline.vim which utilizes vim-airline on monokai theme
 source ~/.promptline.sh
@@ -63,12 +65,19 @@ bindkey '^[[5C' emacs-forward-word
 # easier, better tabcomplete
 setopt COMPLETE_IN_WORD
 zstyle ':completion:*' completer _complete _match _approximate
+setopt noautomenu
+setopt nomenucomplete
 zstyle ':completion:*:approximate:*' max-errors 3 numeric
 setopt BASH_AUTO_LIST
 unsetopt AUTO_MENU
 
 # git autocomplete
 autoload -Uz compinit && compinit
+
+# NPM improvements
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 ### Borrowed from http://matt.blissett.me.uk/linux/zsh/zshrc
 # Say how long a command took, if it took more than 30 seconds
