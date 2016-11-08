@@ -21,6 +21,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'edkolev/promptline.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'vivien/vim-linux-coding-style'
 
 " All of your Plugins must be added before the following line
 call vundle#end()               " required
