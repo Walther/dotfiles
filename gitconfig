@@ -1,9 +1,9 @@
 [user]
-	name = Walther
-	email = veeti.haapsamo@gmail.com
+  name = Veeti Haapsamo
+  email = veeti.haapsamo@gmail.com
 [alias]
-    lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
+  lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
 [color]
-	ui = true
+  ui = true
 [push]
-	default = simple
+  default = simple
