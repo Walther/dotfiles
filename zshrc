@@ -120,6 +120,9 @@ export REPORTTIME=30
     # Typing errors...
     alias 'cd..=cd ..'
 
+    # diff stuff
+    alias diff="diff --color=auto"
+
     # "irkki", old habits die slow...
     alias irkki="tmux attach -d"
 
