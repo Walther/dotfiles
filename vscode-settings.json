@@ -1,0 +1,18 @@
+{
+  "editor.fontFamily": "DejaVu Sans Mono for Powerline",
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Monokai",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.minimap.renderCharacters": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "window.zoomLevel": 0
+}
