@@ -115,18 +115,18 @@ export REPORTTIME=30
 ### Aliases <3
 
     # ls stuff
-    alias ls="ls -CF --color=auto"
-    alias ll="ls -halF --color=auto"
-    alias la="ls -halF --color=auto"
+    alias ls="ls -CF"
+    alias ll="ls -halF"
+    alias la="ls -halF"
 
     # ls after cd
-    chpwd() ls -CF --color=auto
+    chpwd() ls -CF
 
     # Typing errors...
     alias 'cd..=cd ..'
 
     # diff stuff
-    alias diff="diff --color=auto"
+    alias diff="diff"
 
     # "irkki", old habits die slow...
     alias irkki="tmux attach -d"
