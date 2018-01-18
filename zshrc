@@ -1,8 +1,11 @@
 # Add some local bin folders to PATH
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.local/bin
+export PATH=$PATH:/usr/local/bin
 export NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$NPM_PACKAGES/bin:$PATH"
+export ANDROID_HOME=/Users/walther/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Created by promptline.vim which utilizes vim-airline on monokai theme
 source ~/.promptline.sh
@@ -60,7 +63,9 @@ bindkey ';5D' emacs-backward-word
 bindkey ';5C' emacs-forward-word
 bindkey '^[[5D' emacs-backward-word
 bindkey '^[[5C' emacs-forward-word
-
+# Alt-arrows for mac use
+bindkey '[C' emacs-forward-word
+bindkey '[D' emacs-backward-word
 
 # easier, better tabcomplete
 setopt COMPLETE_IN_WORD
