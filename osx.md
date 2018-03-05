@@ -12,3 +12,8 @@ Some OSX usability fixes :)
 - System preferences, Keyboard
 - Modifier keys
 - Remember to set for both internal and USB keyboard (see dropdown at top)
+
+## Fix screenshot location
+    defaults write com.apple.screencapture location ~/Pictures/Screenshots
+    killall SystemUIServer
+
