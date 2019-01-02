@@ -14,5 +14,6 @@
     "**/.DS_Store": true,
     "**/node_modules": true
   },
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "telemetry.enableTelemetry": false
 }
