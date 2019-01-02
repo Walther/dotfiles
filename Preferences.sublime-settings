@@ -1,16 +1,22 @@
 {
-  "color_scheme": "Packages/User/SublimeLinter/Monokai Extended Bright (SL).tmTheme",
+  "binary_file_patterns":
+  [
+    ".svn/",
+    ".git/",
+    ".hg/",
+    "CVS/",
+    "node_modules/",
+    "bower_components/"
+  ],
   "font_face": "DejaVu Sans Mono for Powerline",
-  "font_size": 10,
+  "font_size": 12,
   "ignored_packages":
   [
     "Vintage"
   ],
   "tab_size": 2,
-  "theme": "Boxy Monokai.sublime-theme",
-  "theme_accent_orange": true,
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
-  "word_wrap": true,
-  "binary_file_patterns": [".svn/", ".git/", ".hg/", "CVS/", "node_modules/", "bower_components/"]
+  "word_wrap": true
 }
+
