@@ -10,7 +10,7 @@
   ],
   "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
   "font_face": "DejaVu Sans Mono for Powerline",
-  "font_size": 12,
+  "font_size": 15,
   "ignored_packages":
   [
     "Vintage"
@@ -19,6 +19,7 @@
   "theme": "Adaptive.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
-  "word_wrap": true
+  "word_wrap": true,
+  "scroll_past_end": true,
 }
 
