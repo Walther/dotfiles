@@ -33,15 +33,11 @@ cp ~/dotfiletemp/vim-molokai/colors/molokai.vim ~/.vim/colors/
 cp vimrc ~/.vimrc
 log_msg "Vim essentials in place"
 
-# emacs
-mkdir -p ~/.emacs.d
-cp emacs ~/.emacs
-log_msg "Emacs essentials in place"
+# Neovim
+mkdir -p ~/.config/nvim
+cp nvim/init.vim ~/.config/nvim/
+log_msg "Neovim initiated"
 
-# atom
-mkdir -p ~/.atom
-cp atom.cson ~/.atom/config.cson
-log_msg "Atom essentials in place"
 
 # i3 window manager
 mkdir -p ~/.i3/
