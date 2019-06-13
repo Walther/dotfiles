@@ -60,6 +60,11 @@ rsync -a --exclude='.git' ~/dotfiletemp/powerline-fonts/ ~/.fonts/
 fc-cache -f ~/.fonts/
 log_msg "Re-cached font awesomeness"
 
+# Terminal
+mkdir -p ~/.config/alacritty/
+cp alacritty.yml ~/.config/alacritty/
+log_msg "Alacritty served, bon appetit"
+
 # Shell
 cp zshrc ~/.zshrc
 cp promptline.sh ~/.promptline.sh
