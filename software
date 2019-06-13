@@ -1,2 +1,14 @@
-feh fonts-dejavu ghc git htop i3-wm i3lock iotop lightdm lshw lxappearance murrine-themes nethogs nmap pandoc pwgen rxvt-unicode-256color scrot silversearcher-ag sshfs tmux tree unzip vim-nox wget x11-xserver-utils xcompmgr xsel zip zsh
+alacritty
+bat
+ffmpeg
+fd
+neovim
+pandoc
+ripgrep
+rustup
+sublimetext
+tmux
+viu
+vscode
+zsh
 
