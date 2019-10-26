@@ -12,7 +12,7 @@ source ~/.promptline.sh
 ZLE_RPROMPT_INDENT=0
 
 # Some essentials
-export EDITOR=vim
+export EDITOR=nvim
 export SHELL=zsh
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # removed '/' from the list; ctrl-w on ls foo/bar/baz only removes baz
 
@@ -153,5 +153,8 @@ export REPORTTIME=30
 
     # file count, accepts parameters
     count() { ls -1 "$@" | wc -l }
+
+    # neovim
+    alias vim="nvim"
 
 ### end aliases
