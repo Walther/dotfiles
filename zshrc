@@ -7,6 +7,17 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 export ANDROID_HOME=/Users/walther/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+# UTF-8 goodness
+export LANG="en-US.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL=
+
 # Created by promptline.vim which utilizes vim-airline on monokai theme
 source ~/.promptline.sh
 ZLE_RPROMPT_INDENT=0
