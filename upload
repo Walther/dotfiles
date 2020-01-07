@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# modified from arcatan's publicize script <3
+# license: public domain
+
+set -euo pipefail
+
+if [[ -z "$1" ]]; then
+    echo "File to be uploaded missing! Usage: $0 <path> [filename]"
+    exit 1
+fi
+
+if [[ ! -f "$1" ]]; then
+    echo "Not a file: $1"
+    exit 1
+fi
+
+FILENAME="${2:-$(basename "$1")}"
+HOST="lakka.kapsi.fi"
+DESTINATION="sites/walther.guru/www/temp/${FILENAME}"
+URL="https://walther.guru/temp/$(echo -n "$FILENAME"|jq -s -R -r @uri)"
+
+if ssh -q "$HOST" "test -f '$DESTINATION'"; then
+    echo "File already exists: $URL"
+    exit 1
+fi
+
+# The extra quotes around $DESTINATION are needed because otherwise the remote
+# rsync will split words if $DESTINATION contains a space.
+rsync --copy-links --ignore-existing "$1" "$HOST:\"$DESTINATION\""
+echo "$URL" | tee /dev/tty | pbcopy
+

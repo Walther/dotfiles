@@ -96,6 +96,11 @@ log_msg "Put npmrc in place"
 cp muttrc ~/.muttrc
 log_msg "Put muttrc in place"
 
+# scripts
+mkdir -p ~/.bin/
+cp upload ~/.bin/
+log_msg "Copied some handy scripts"
+
 # Cleanup
 rm -rf ~/dotfiletemp
 log_msg "Took out the trash"
