@@ -14,6 +14,10 @@
     "**/.DS_Store": true,
     "**/node_modules": true
   },
-  "window.zoomLevel": 0,
-  "telemetry.enableTelemetry": false
+  "window.zoomLevel": 3,
+  "telemetry.enableTelemetry": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "javascript.validate.enable": false
 }
