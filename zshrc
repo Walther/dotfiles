@@ -6,6 +6,7 @@ export NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 export ANDROID_HOME=/Users/walther/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+source $HOME/.cargo/env
 
 # UTF-8 goodness
 export LANG="en-US.UTF-8"
