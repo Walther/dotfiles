@@ -1,0 +1,6 @@
+# topgrade config
+
+[git]
+repos = [
+    "~/git/*/",
+]

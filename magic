@@ -106,6 +106,10 @@ mkdir -p ~/.k9s/
 cp k9s-skin.yml ~/.k9s/skin.yml
 log_msg "Prettified k9s"
 
+# topgrade
+cp topgrade.toml ~/.config/topgrade.toml
+log_msg "Put topgrade.toml in place"
+
 # Cleanup
 rm -rf ~/dotfiletemp
 log_msg "Took out the trash"
