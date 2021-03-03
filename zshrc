@@ -194,8 +194,8 @@
 ### Aliases
 
     # ls stuff
-    alias ls="ls -CF"
-    alias ll="ls -halF"
+    alias ls="exa -F"
+    alias ll="exa -halF"
 
     # Typing errors...
     alias 'cd..=cd ..'
