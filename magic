@@ -82,10 +82,6 @@ log_msg "Tweaked Git powers"
 cp Xresources ~/.Xresources
 log_msg "Extracted Xresources serum"
 
-# Screenrc
-cp screenrc ~/.screenrc
-log_msg "Matching the screenrc"
-
 # Tmux
 cp tmux.conf ~/.tmux.conf
 log_msg "Multiplexed multiplexers"
