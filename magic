@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Specs:
 # ./magic
@@ -19,6 +19,10 @@ function log_msg() {
 # Main
 
 log_msg "Starting up!"
+
+# Software installed by `cargo`
+./cargo-install.sh;
+log_msg "Cargo installed some software"
 
 # Vim
 # Check if Vundle is downloaded; if not, clone it. Afterwards it updates itself
@@ -68,8 +72,6 @@ log_msg "Alacritty served, bon appetit"
 # Shell
 cp zshrc ~/.zshrc
 cp promptline.sh ~/.promptline.sh
-mkdir -p ~/.urxvt/ext/
-git clone --quiet https://github.com/muennich/urxvt-perls ~/.urxvt/ext
 log_msg "Boosted your shell efficiency"
 
 # Git
