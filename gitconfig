@@ -20,6 +20,11 @@
 [fetch]
   recurseSubmodules = true
 
+[checkout]
+  defaultRemote = origin
+  # parallelize more
+  workers = -1
+
 [merge]
   conflictStyle = diff3
 
