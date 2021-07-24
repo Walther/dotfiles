@@ -17,13 +17,29 @@
 [color]
   ui = true
 
+[feature]
+  # improved performance when lots of files exist
+  manyFiles = true
+
 [fetch]
   recurseSubmodules = true
+  # "A value of 0 will give some reasonable default"
+  parallel = 0
+  prune = true
+  pruneTags = true
 
 [checkout]
   defaultRemote = origin
   # parallelize more
   workers = -1
+
+[diff]
+  algorithm = histogram
+  # detect copied files as part of rename detection
+  renames = copies
+
+[init]
+  defaultBranch = main
 
 [merge]
   conflictStyle = diff3
