@@ -1,9 +1,37 @@
+[advice]
+  # slightly less verbose `git status` output
+  statusHints = false
+
+[core]
+  # windows only; treat paths starting with dot as hidden, default: .git only
+  hideDotFiles = true
+
 [user]
   name = Walther
   email = veeti.haapsamo@gmail.com
+
 [alias]
+  # history visualization, line per commit
   lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
+
 [color]
   ui = true
+
+[fetch]
+  recurseSubmodules = true
+
+[merge]
+  conflictStyle = diff3
+
 [push]
-  default = simple
+  default = current
+
+# https://github.com/dandavison/delta - cargo install git-delta
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+[delta]
+  syntax-theme = Monokai Extended
+
