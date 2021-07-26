@@ -6,6 +6,7 @@ cargo install \
     cargo-edit \
     cargo-update \
     cargo-watch \
+    exa \
     flamegraph \
     git-delta \
     just \
