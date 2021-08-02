@@ -9,6 +9,7 @@ cargo install \
     exa \
     flamegraph \
     git-delta \
+    hexyl \
     just \
     tokei \
     topgrade \
