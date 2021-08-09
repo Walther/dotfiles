@@ -56,3 +56,5 @@
 [delta]
   syntax-theme = Monokai Extended
 
+[pull]
+	ff = only
