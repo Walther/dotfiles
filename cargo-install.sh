@@ -11,6 +11,7 @@ cargo install \
     git-delta \
     hexyl \
     just \
+    ripgrep \
     tokei \
     topgrade \
     viu \
