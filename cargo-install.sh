@@ -7,6 +7,7 @@ cargo install \
     cargo-update \
     cargo-watch \
     exa \
+    fd-find \
     flamegraph \
     git-delta \
     hexyl \

@@ -1,1 +1,1 @@
-awscli bat cmatrix coreutils exiftool fd ffmpeg figlet git hexyl htop jq kubernetes-cli minikube mosh neovim nmap node nushell ripgrep terraform tmux tokei topgrade tree tty-clock watch zola
+awscli coreutils exiftool ffmpeg figlet git htop jq mosh neovim nmap tmux tree tty-clock watch
