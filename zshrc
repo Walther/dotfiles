@@ -175,6 +175,16 @@
     # ls after cd
     chpwd() ls -CF
 
+    # markdown to html5
+    function html() {
+        pandoc \
+            -t html5 \
+            -c https://walther.guru/style.css \
+            --katex \
+            --standalone \
+            -o $2 $1
+    }
+
     # markdown to pdf generation
     function pdf() {
         pandoc \
@@ -183,6 +193,7 @@
             --standalone \
             --metadata=papersize:a4 \
             --metadata="date:$(date +%F)" \
+            --katex \
             --pdf-engine wkhtmltopdf \
             -V="documentclass=a4paper" \
             -o $2 $1
