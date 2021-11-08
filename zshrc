@@ -173,7 +173,7 @@
     count() { ls -1 "$@" | wc -l }
     
     # ls after cd
-    chpwd() ls -CF
+    chpwd() ls -F
 
     # markdown to html5
     function html() {
