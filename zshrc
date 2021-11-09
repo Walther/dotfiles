@@ -191,11 +191,15 @@
             -t html5 \
             -c https://walther.guru/style.css \
             --standalone \
-            --metadata=papersize:a4 \
-            --metadata="date:$(date +%F)" \
+            --metadata "date:$(date +%F)" \
+            --metadata "papersize:a4" \
+            --metadata "margin-top:1cm" \
+            --metadata "margin-right:1cm" \
+            --metadata "margin-bottom:1cm" \
+            --metadata "margin-left:1cm" \
             --katex \
             --pdf-engine wkhtmltopdf \
-            -V="documentclass=a4paper" \
+            --pdf-engine-opt "--print-media-type" \
             -o $2 $1
     }
 
