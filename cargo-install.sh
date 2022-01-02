@@ -16,4 +16,5 @@ cargo install \
     tokei \
     topgrade \
     viu \
+    zoxide \
 
