@@ -29,7 +29,7 @@ font:
     style: Italic
 
   # Point size
-  size: 18.0
+  size: 20.0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -118,12 +118,6 @@ visual_bell:
   animation: EaseOutExpo
   duration: 0
   color: "0xffffff"
-
-# Background opacity
-#
-# Window opacity as a floating point number from `0.0` to `1.0`.
-# The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
 
 # Mouse bindings
 #
