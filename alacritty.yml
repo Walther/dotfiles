@@ -19,13 +19,13 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: DejaVu Sans Mono for Powerline
-    style: Book
+    family: Iosevka Fixed
+    style: Regular
   bold:
-    family: DejaVu Sans Mono for Powerline
+    family: Iosevka Fixed
     style: Bold
   italic:
-    family: DejaVu Sans Mono for Powerline
+    family: Iosevka Fixed
     style: Italic
 
   # Point size
