@@ -3,6 +3,7 @@ set -exuo pipefail
 brew install \
   awscli \
   coreutils \
+  dog \
   duf \
   exiftool \
   ffmpeg \
