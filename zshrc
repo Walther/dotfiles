@@ -92,7 +92,6 @@
 
     export NPM_PACKAGES="${HOME}/.npm-packages"
     export PATH="$NPM_PACKAGES/bin:$PATH"
-    source $HOME/.cargo/env
 
     # UTF-8 goodness
     export LANG="en-US.UTF-8"
@@ -105,8 +104,6 @@
     export LC_TIME="en_US.UTF-8"
     export LC_ALL=
 
-    # Created by promptline.vim which utilizes vim-airline on monokai theme
-    source ~/.promptline.sh
     ZLE_RPROMPT_INDENT=0
 
     # Some essentials
@@ -222,3 +219,19 @@
     alias rekey="setxkbmap -layout us -option caps:escape,compose:menu,nbsp:none;"
 
 ### end aliases
+
+### Source other files
+    try_source() {
+        # Check file exists, is regular file and is readable:
+        if [[ -f $1 && -r $1 ]]; then
+            # Source it
+            source $1
+        fi
+    }
+
+    # Created by promptline.vim which utilizes vim-airline on monokai theme
+    try_source ~/.promptline.sh
+
+    try_source $HOME/.cargo/env
+
+### End source other files
