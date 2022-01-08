@@ -6,15 +6,18 @@ cargo install \
     cargo-edit \
     cargo-update \
     cargo-watch \
+    du-dust \
     exa \
     fd-find \
     flamegraph \
     git-delta \
+    gping \
     hexyl \
+    hyperfine \
     just \
     ripgrep \
     tokei \
     topgrade \
     viu \
     zoxide \
-
+    xh \
