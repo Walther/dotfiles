@@ -17,25 +17,7 @@ function log_msg() {
 }
 
 # Main
-
 log_msg "Starting up!"
-
-# Software installed by `cargo`
-./cargo-install.sh;
-log_msg "Cargo installed some software"
-
-# Vim
-# Check if Vundle is downloaded; if not, clone it. Afterwards it updates itself
-[ ! -d ~/.vim/bundle/Vundle.vim ] && git clone --quiet https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-mkdir -p ~/.vim/backup
-
-mkdir -p ~/dotfiletemp/vim-molokai
-git clone --quiet https://github.com/tomasr/molokai ~/dotfiletemp/vim-molokai
-mkdir -p ~/.vim/colors/
-cp ~/dotfiletemp/vim-molokai/colors/molokai.vim ~/.vim/colors/
-cp vimrc ~/.vimrc
-log_msg "Vim essentials in place"
 
 # Neovim
 mkdir -p ~/.config/
@@ -46,7 +28,6 @@ curl -fLo ~/.config/nvim/colors/monokai.vim --create-dirs \
     https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
 log_msg "Neovim initiated"
 
-
 # i3 window manager
 mkdir -p ~/.i3/
 cp i3.conf ~/.i3/config
@@ -54,15 +35,6 @@ cp statusbar ~/.i3/statusbar
 git clone --quiet https://github.com/olemartinorg/i3-alternating-layout ~/dotfiletemp/i3-alternating-layout
 cp ~/dotfiletemp/i3-alternating-layout/alternating_layouts.py ~/.i3alternate.py
 log_msg "Tossed around i3 window manager configurations"
-
-# Fonts
-log_msg "Starting a bigger task: fonts"
-mkdir -p ~/.fonts/
-mkdir -p ~/dotfiletemp/powerline-fonts
-git clone --quiet https://github.com/powerline/fonts ~/dotfiletemp/powerline-fonts
-rsync -a --exclude='.git' ~/dotfiletemp/powerline-fonts/ ~/.fonts/
-fc-cache -f ~/.fonts/
-log_msg "Re-cached font awesomeness"
 
 # Terminal
 mkdir -p ~/.config/alacritty/
