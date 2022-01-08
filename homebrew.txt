@@ -1,1 +1,0 @@
-awscli coreutils exiftool ffmpeg figlet git htop jq mosh neovim nmap tmux tree tty-clock watch
