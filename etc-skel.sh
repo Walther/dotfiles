@@ -8,4 +8,4 @@ which zsh # Ensure zsh exists on system
 
 sudo cp promptline.sh /etc/skel/.promptline.sh
 sudo cp zshrc /etc/skel/.zshrc
-sudo sed -i .bu -e "s_DSHELL=/bin/bash_DSHELL=$(which zsh)_" /etc/adduser.conf
+sudo sed -i.bu -e "s_DSHELL=/bin/bash_DSHELL=$(which zsh)_" /etc/adduser.conf
