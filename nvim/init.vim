@@ -16,7 +16,6 @@ set tabstop=4
 set autoindent
 
 " Syntax highlighting stuff
-set termguicolors
 syntax on
 colorscheme monokai
 
@@ -33,7 +32,7 @@ map <C-PageDown> :bnext<CR>
 :command W w
 :command Q q
 
-:command Untrail %s/\s\+$/g
+:command Untrail %s/\s\+$//ge
 
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
@@ -52,12 +51,3 @@ let g:promptline_preset = {
     \'a' : [ '$(hostname)' ],
     \'b' : [ promptline#slices#user() ],
     \'c' : [ promptline#slices#cwd(), promptline#slices#vcs_branch() ]}
-
-" COC
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
