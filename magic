@@ -22,9 +22,9 @@ log_msg "Starting up!"
 # Neovim
 mkdir -p ~/.config/
 cp -r nvim ~/.config/
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+curl -sSLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-curl -fLo ~/.config/nvim/colors/monokai.vim --create-dirs \
+curl -sSLo ~/.config/nvim/colors/monokai.vim --create-dirs \
     https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
 log_msg "Neovim initiated"
 
@@ -32,8 +32,8 @@ log_msg "Neovim initiated"
 mkdir -p ~/.i3/
 cp i3.conf ~/.i3/config
 cp statusbar ~/.i3/statusbar
-git clone --quiet https://github.com/olemartinorg/i3-alternating-layout ~/dotfiletemp/i3-alternating-layout
-cp ~/dotfiletemp/i3-alternating-layout/alternating_layouts.py ~/.i3alternate.py
+curl -sSLo ~/.i3alternate.py --create-dirs \
+    https://raw.githubusercontent.com/olemartinorg/i3-alternating-layout/master/alternating_layouts.py
 log_msg "Tossed around i3 window manager configurations"
 
 # Terminal
