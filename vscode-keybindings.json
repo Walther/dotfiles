@@ -1,32 +1,37 @@
 [
-    {
-        "key": "cmd+y",
-        "command": "redo",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+pageup",
-        "command": "workbench.action.previousEditor",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "workbench.action.nextEditor",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+j",
-        "command": "editor.action.joinLines",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+l",
-        "command": "expandLineSelection",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+shift+l",
-        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-        "when": "editorTextFocus"
-    }
+  {
+    "key": "cmd+y",
+    "command": "redo",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+z",
+    "command": "redo",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+l",
+    "command": "expandLineSelection",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  }
 ]

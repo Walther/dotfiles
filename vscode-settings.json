@@ -1,11 +1,15 @@
 {
-  "editor.fontFamily": "DejaVu Sans Mono for Powerline",
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "Iosevka Fixed",
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Monokai",
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "editor.wordWrap": "on",
-  "editor.tabSize": 2,
   "editor.minimap.renderCharacters": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.colorTheme": "Monokai",
+  "window.zoomLevel": 1,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -14,10 +18,12 @@
     "**/.DS_Store": true,
     "**/node_modules": true
   },
-  "window.zoomLevel": 3,
-  "telemetry.enableTelemetry": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+  "telemetry.telemetryLevel": "off",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "javascript.validate.enable": false
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
