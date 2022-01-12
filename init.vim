@@ -15,10 +15,6 @@ set shiftwidth=4
 set tabstop=4
 set autoindent
 
-" Syntax highlighting stuff
-syntax on
-colorscheme monokai
-
 " Keybindings
 :nnoremap <CR> :nohlsearch<CR>/<BS><CR>
 inoremap <S-tab> <C-d>
@@ -39,6 +35,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
+Plug 'tanvirtin/monokai.nvim'
 call plug#end()
 
 " Plugin settings
@@ -51,3 +48,7 @@ let g:promptline_preset = {
     \'a' : [ '$(hostname)' ],
     \'b' : [ promptline#slices#user() ],
     \'c' : [ promptline#slices#cwd(), promptline#slices#vcs_branch() ]}
+
+" Syntax highlighting stuff
+syntax on
+colorscheme monokai
