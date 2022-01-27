@@ -8,6 +8,7 @@ set smartcase
 set incsearch
 set showmatch
 set switchbuf=usetab,newtab
+set clipboard+=unnamedplus
 
 " Coding style
 set expandtab
@@ -52,3 +53,4 @@ let g:promptline_preset = {
 " Syntax highlighting stuff
 syntax on
 colorscheme monokai
+
