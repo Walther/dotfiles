@@ -74,7 +74,7 @@
     setopt EXTENDED_GLOB
 
 ## Borrowed from http://matt.blissett.me.uk/linux/zsh/zshrc
-    
+
     # Say how long a command took, if it took more than 30 seconds
     export REPORTTIME=30
 
@@ -168,7 +168,7 @@
 
     # file count, accepts parameters
     count() { ls -1 "$@" | wc -l }
-    
+
     # ls after cd
     chpwd() ls -F
 
@@ -179,6 +179,7 @@
             -c https://walther.guru/style.css \
             --katex \
             --standalone \
+            --highlight-style monochrome \
             -o $2 $1
     }
 
@@ -188,6 +189,7 @@
             -t html5 \
             -c https://walther.guru/style.css \
             --standalone \
+            --highlight-style monochrome \
             --metadata "date:$(date +%F)" \
             --metadata "papersize:a4" \
             --metadata "margin-top:1cm" \
