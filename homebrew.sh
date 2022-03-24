@@ -15,13 +15,10 @@ brew install \
   httpie \
   jq \
   libvterm \
-  mactex-no-gui \
   mosh \
   neovim \
-  nghttp2 \
   nmap \
   pandoc \
-  teensy_loader_cli \
   tmux \
   tree \
   tty-clock \
