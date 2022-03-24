@@ -1,4 +1,5 @@
 #!/bin/bash
+set -exuo pipefail
 
 # modified from arcatan's publicize script <3
 # license: public domain
