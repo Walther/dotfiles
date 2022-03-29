@@ -38,7 +38,9 @@ log_msg "Tossed around i3 window manager configurations"
 # Terminal
 mkdir -p ~/.config/alacritty/
 cp alacritty.yml ~/.config/alacritty/
-log_msg "Alacritty served, bon appetit"
+mkdir -p ~/.config/kitty/
+cp kitty.conf ~/.config/kitty/
+log_msg "Alacritty and Kitty served, bon appetit"
 
 # Shell
 cp zshrc ~/.zshrc
