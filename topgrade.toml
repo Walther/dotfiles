@@ -1,5 +1,7 @@
 # topgrade config
 
+no_retry = true
+
 [git]
 repos = [
     "~/git/*/",
