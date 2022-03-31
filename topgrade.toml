@@ -1,6 +1,7 @@
 # topgrade config
 
 no_retry = true
+ssh_arguments = "-A"
 
 [git]
 repos = [
