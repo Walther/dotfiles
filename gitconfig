@@ -57,4 +57,4 @@
   syntax-theme = Monokai Extended
 
 [pull]
-	ff = only
+  ff = only
