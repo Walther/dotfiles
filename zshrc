@@ -89,6 +89,7 @@
     p ~/.bin
     p ~/.local/bin
     p /usr/local/bin
+    p ~/.fnm
 
     export NPM_PACKAGES="${HOME}/.npm-packages"
     export PATH="$NPM_PACKAGES/bin:$PATH"
@@ -235,5 +236,8 @@
     try_source ~/.promptline.sh
 
     try_source $HOME/.cargo/env
+
+    eval "`fnm env`"
+    eval "$(zoxide init zsh)"
 
 ### End source other files
