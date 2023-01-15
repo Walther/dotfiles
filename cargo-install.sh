@@ -10,6 +10,7 @@ cargo install \
     exa \
     fd-find \
     flamegraph \
+    fnm \
     git-delta \
     gping \
     hexyl \
