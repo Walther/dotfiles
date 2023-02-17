@@ -73,8 +73,8 @@ cp upload ~/.bin/
 log_msg "Copied some handy scripts"
 
 # k9s
-mkdir -p ~/.k9s/
-cp k9s-skin.yml ~/.k9s/skin.yml
+mkdir -p ~/.config/k9s/
+cp k9s-skin.yml ~/.config/k9s/skin.yml
 log_msg "Prettified k9s"
 
 # topgrade
