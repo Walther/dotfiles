@@ -14,7 +14,7 @@
     setopt noautomenu
     setopt nomenucomplete
     zstyle ':completion:*:approximate:*' max-errors 3 numeric
-    setopt BASH_AUTO_LIST
+    setopt AUTO_LIST
     unsetopt AUTO_MENU
 
     # git autocomplete
