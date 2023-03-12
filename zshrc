@@ -160,8 +160,8 @@
     bindkey '^[[5D' emacs-backward-word
     bindkey '^[[5C' emacs-forward-word
     # Alt-arrows for mac use
-    bindkey '[C' emacs-forward-word
-    bindkey '[D' emacs-backward-word
+    bindkey "^[[1;3D" emacs-backward-word
+    bindkey "^[[1;3C" emacs-forward-word
 
 ### End Keys
 
