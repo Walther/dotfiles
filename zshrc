@@ -154,11 +154,9 @@
     zle -N zle-line-init
     zle -N zle-line-finish
 
-    # Ctrl-arrows are better than alt-b and whatever.
-    bindkey ';5D' emacs-backward-word
-    bindkey ';5C' emacs-forward-word
-    bindkey '^[[5D' emacs-backward-word
-    bindkey '^[[5C' emacs-forward-word
+    # Ctrl-arrows for linux use
+    bindkey "^[[1;5D" emacs-backward-word
+    bindkey "^[[1;5C" emacs-forward-word
     # Alt-arrows for mac use
     bindkey "^[[1;3D" emacs-backward-word
     bindkey "^[[1;3C" emacs-forward-word
