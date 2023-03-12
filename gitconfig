@@ -51,6 +51,7 @@
 
 # https://github.com/dandavison/delta - cargo install git-delta
 [pager]
+  blame = delta
   diff = delta
   log = delta
   reflog = delta

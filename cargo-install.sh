@@ -4,6 +4,7 @@ cargo install \
     bat \
     bottom \
     cargo-edit \
+    cargo-info \
     cargo-update \
     cargo-watch \
     du-dust \
@@ -16,6 +17,7 @@ cargo install \
     hexyl \
     hyperfine \
     just \
+    miniserve \
     ripgrep \
     tokei \
     topgrade \
