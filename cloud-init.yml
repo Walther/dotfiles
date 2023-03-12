@@ -1,0 +1,31 @@
+#cloud-config
+
+package_update: true
+package_upgrade: true
+packages:
+  - build-essential
+  - fail2ban
+  - git
+  - htop
+  - jq
+  - mosh
+  - neovim
+  - pandoc
+  - pkg-config
+  - tmux
+  - zsh
+
+users:
+  - name: walther
+    groups: ["users", "sudo", "adm"]
+    sudo:
+      # allow myself to set a password without knowing the non-existing "previous" one
+      - "ALL = NOPASSWD: /usr/bin/passwd walther"
+    ssh_import_id:
+      - gh:walther
+    shell: /usr/bin/zsh
+
+runcmd:
+  - su -l walther -c "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
+  - su -l walther -c "mkdir -p git && cd git && git clone https://github.com/walther/dotfiles"
+  - systemctl enable fail2ban
