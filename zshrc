@@ -216,10 +216,7 @@
     # "irkki", old habits die slow...
     alias irkki="tmux attach -d"
 
-    # rekey; reloading the keymaps and xmodmaps of my liking after (re)plugging a keyboard
-    alias rekey="setxkbmap -layout us -option caps:escape,compose:menu,nbsp:none;"
-
-### end aliases
+### End aliases
 
 ### Source other files
     try_source() {
@@ -232,10 +229,16 @@
 
     # Created by promptline.vim which utilizes vim-airline on monokai theme
     try_source ~/.promptline.sh
-
+    # cargo for rust
     try_source $HOME/.cargo/env
+    # local customizations
+    try_source $HOME/.zshrc-overrides
+
+### End source other files
+
+### Evals
 
     eval "`fnm env`"
     eval "$(zoxide init zsh)"
 
-### End source other files
+### End evals
