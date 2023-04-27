@@ -48,6 +48,7 @@
 
 [push]
   default = current
+  autoSetupRemote = true
 
 # https://github.com/dandavison/delta - cargo install git-delta
 [pager]
