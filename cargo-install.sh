@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -exuo pipefail
-cargo install \
+cargo binstall \
     bat \
     bottom \
     cargo-edit \
