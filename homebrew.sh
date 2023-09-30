@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 set -exuo pipefail
 brew install \
-  awscli \
   coreutils \
   dog \
   duf \
   exiftool \
-  ffmpeg \
   ghostscript \
   git \
   htop \
