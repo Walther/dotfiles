@@ -1,9 +1,14 @@
+[misc]
 # topgrade config
 
 no_retry = true
 ssh_arguments = "-A"
+remote_topgrades = [
+    "raspberrypi"
+]
 
 [git]
-repos = [
+pull_only_repos = [
     "~/git/*/",
 ]
+
