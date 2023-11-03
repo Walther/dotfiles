@@ -4,7 +4,6 @@
 no_retry = true
 ssh_arguments = "-A"
 remote_topgrades = [
-    "raspberrypi"
 ]
 
 [git]
