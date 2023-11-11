@@ -171,37 +171,6 @@
     # ls after cd
     chpwd() ls -F
 
-    # markdown to html5
-    function html() {
-        pandoc \
-            -t html5 \
-            -c https://walther.guru/style.css \
-            --katex \
-            --standalone \
-            --highlight-style monochrome \
-            -o $2 $1
-    }
-
-    # markdown to pdf generation
-    function pdf() {
-        pandoc \
-            -t html5 \
-            -c https://walther.guru/style.css \
-            --standalone \
-            --highlight-style monochrome \
-            --metadata "date:$(date +%F)" \
-            --metadata "papersize:a4" \
-            --metadata "margin-top:1cm" \
-            --metadata "margin-right:1cm" \
-            --metadata "margin-bottom:1cm" \
-            --metadata "margin-left:1cm" \
-            --katex \
-            --pdf-engine wkhtmltopdf \
-            --pdf-engine-opt "--print-media-type" \
-            -o $2 $1
-    }
-
-
 ### End Functions
 
 ### Aliases

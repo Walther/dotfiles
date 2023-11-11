@@ -5,15 +5,12 @@ brew install \
   dog \
   duf \
   exiftool \
-  ghostscript \
   git \
   htop \
   jq \
   libvterm \
   mosh \
   neovim \
-  nmap \
-  pandoc \
   tmux \
   tree \
   tty-clock \
