@@ -8,7 +8,7 @@ cargo binstall \
     cargo-update \
     cargo-watch \
     du-dust \
-    exa \
+    eza \
     fd-find \
     flamegraph \
     fnm \
