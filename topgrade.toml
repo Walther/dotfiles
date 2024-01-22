@@ -7,7 +7,7 @@ remote_topgrades = [
 ]
 
 [git]
-pull_only_repos = [
+repos = [
     "~/git/*/",
 ]
 
