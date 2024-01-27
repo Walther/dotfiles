@@ -176,8 +176,8 @@
 ### Aliases
 
     # ls stuff
-    alias ls="exa -F"
-    alias ll="exa -halF"
+    alias ls="eza -F"
+    alias ll="eza -halF"
 
     # Typing errors...
     alias 'cd..=cd ..'
