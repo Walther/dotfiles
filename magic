@@ -22,7 +22,7 @@ log_msg "Starting up!"
 
 # Neovim
 mkdir -p ~/.config/nvim
-cp init.vim ~/.config/nvim/
+cp init.lua ~/.config/nvim/
 curl -sSLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 log_msg "Neovim initiated"
