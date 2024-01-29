@@ -53,4 +53,5 @@ let g:promptline_preset = {
 " Syntax highlighting stuff
 syntax on
 colorscheme monokai
+:hi Normal guibg=NONE ctermbg=NONE
 
