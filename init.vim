@@ -53,5 +53,14 @@ let g:promptline_preset = {
 " Syntax highlighting stuff
 syntax on
 colorscheme monokai
-:hi Normal guibg=NONE ctermbg=NONE
+
+" Clear the background, use terminal bg
+:hi Normal guibg=none ctermbg=none
+:hi LineNr guibg=none ctermbg=none
+:hi Folded guibg=none ctermbg=none
+:hi NonText guibg=none ctermbg=none
+:hi SpecialKey guibg=none ctermbg=none
+:hi VertSplit guibg=none ctermbg=none
+:hi SignColumn guibg=none ctermbg=none
+:hi EndOfBuffer guibg=none ctermbg=none
 
