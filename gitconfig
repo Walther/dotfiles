@@ -21,7 +21,8 @@
 
 [feature]
   # improved performance when lots of files exist
-  manyFiles = true
+  # temporarily disabled, see https://github.com/libgit2/libgit2/issues/6531
+  # manyFiles = true
 
 [fetch]
   recurseSubmodules = true
