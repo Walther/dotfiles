@@ -45,7 +45,7 @@
   defaultBranch = main
 
 [merge]
-  conflictStyle = zdiff3
+  conflictStyle = diff3
 
 [push]
   default = current
