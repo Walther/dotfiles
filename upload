@@ -1,9 +1,4 @@
 #!/bin/bash
-set -exuo pipefail
-
-# modified from arcatan's publicize script <3
-# license: public domain
-
 set -euo pipefail
 
 if [[ -z "$1" ]]; then
@@ -17,9 +12,9 @@ if [[ ! -f "$1" ]]; then
 fi
 
 FILENAME="${2:-$(basename "$1")}"
-HOST="lakka.kapsi.fi"
-DESTINATION="sites/walther.guru/www/temp/${FILENAME}"
-URL="https://walther.guru/temp/$(echo -n "$FILENAME"|jq -s -R -r @uri)"
+HOST="waltteri.net"
+DESTINATION="/var/www/temp/${FILENAME}"
+URL="https://temp.waltteri.net/$(echo -n "$FILENAME"|jq -s -R -r @uri)"
 
 if ssh -q "$HOST" "test -f '$DESTINATION'"; then
     echo "File already exists: $URL"
