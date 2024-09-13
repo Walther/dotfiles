@@ -2,15 +2,17 @@
 set -exuo pipefail
 brew install \
   coreutils \
+  cyme \
   dog \
   duf \
   exiftool \
   git \
+  hexyl \
   htop \
   jq \
+  kitty \
   libvterm \
   mosh \
-  neovim \
   tmux \
   tree \
   tty-clock \
