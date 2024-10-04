@@ -7,6 +7,7 @@ brew install \
   duf \
   exiftool \
   git \
+  helix \
   hexyl \
   htop \
   jq \

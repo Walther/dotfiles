@@ -27,6 +27,11 @@ curl -sSLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 log_msg "Neovim initiated"
 
+# Helix
+mkdir -p ~/.config/helix
+cp helix.toml ~/.config/helix/config.toml
+log_msg "Helix initiated"
+
 # i3 window manager
 mkdir -p ~/.i3/
 cp i3.conf ~/.i3/config

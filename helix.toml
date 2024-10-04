@@ -1,0 +1,5 @@
+theme = "monokai"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
