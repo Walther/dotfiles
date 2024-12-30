@@ -2,4 +2,4 @@ theme = "monokai"
 
 [editor.soft-wrap]
 enable = true
-wrap-indicator = ""
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
