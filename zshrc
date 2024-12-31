@@ -111,6 +111,7 @@
     export EDITOR=nvim
     export SHELL=zsh
     export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # removed '/' from the list; ctrl-w on ls foo/bar/baz only removes baz
+    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ### End Path & Exports
 
