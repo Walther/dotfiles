@@ -3,7 +3,6 @@ set -exuo pipefail
 brew install \
   coreutils \
   cyme \
-  dog \
   duf \
   exiftool \
   git \
