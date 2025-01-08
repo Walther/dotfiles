@@ -17,3 +17,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 # Restart some services for changes to take effect
 killall Dock
 killall SystemUIServer
+
+# Remove "last login" messages from new shell sessions
+touch ~/.hushlogin
+
