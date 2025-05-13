@@ -3,7 +3,7 @@ add_newline = false
 
 [character]
 success_symbol = '[❯](bold fg:#fd971f)'
-error_symbol = '[❯](bold fg:$fd971f)'
+error_symbol = '[❯](bold fg:#fd971f)'
 
 [username]
 show_always = true
