@@ -178,7 +178,7 @@
 
     # ls stuff
     alias ls="eza -F"
-    alias ll="eza -halF"
+    alias ll="eza -halF --time-style long-iso --group"
 
     # Typing errors...
     alias 'cd..=cd ..'
