@@ -1,0 +1,25 @@
+format = '$username$hostname$directory$fill$all$line_break$character'
+add_newline = false
+
+[character]
+success_symbol = '[❯](bold fg:#fd971f)'
+error_symbol = '[❯](bold fg:$fd971f)'
+
+[username]
+show_always = true
+format = '[ $user@](bold bg:#fd971f fg:#333333)'
+
+[hostname]
+ssh_only = false
+format = '[$hostname ](bold bg:prev_bg fg:prev_fg)[ ](fg:prev_bg)'
+
+[directory]
+format = '$path  '
+truncate_to_repo = false
+truncation_length = 0
+
+[directory.substitutions]
+'/' = '  '
+
+[git_branch]
+format = '$symbol$branch(:$remote_branch) '

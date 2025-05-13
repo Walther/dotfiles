@@ -50,6 +50,7 @@ log_msg "Alacritty and Kitty served, bon appetit"
 # Shell
 cp zshrc ~/.zshrc
 cp promptline.sh ~/.promptline.sh
+cp starship.toml ~/.config/starship.toml
 log_msg "Boosted your shell efficiency"
 
 # Git

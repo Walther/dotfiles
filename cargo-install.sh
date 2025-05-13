@@ -26,6 +26,7 @@ cargo binstall --disable-telemetry \
     just \
     miniserve \
     ripgrep \
+    starship \
     tokei \
     topgrade \
     viu \
