@@ -1,0 +1,10 @@
+[user]
+name = "Walther"
+email = "email+git@waltteri.net"
+
+[ui]
+pager = "delta"
+
+[ui.diff]
+format = "git"
+

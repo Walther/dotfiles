@@ -56,6 +56,11 @@ log_msg "Boosted your shell efficiency"
 cp gitconfig ~/.gitconfig
 log_msg "Tweaked Git powers"
 
+# jj
+mkdir -p ~/.config/jj/
+cp jj.toml ~/.config/jj/config.toml
+log_msg "Jujutsu configured"
+
 # Xresources
 cp Xresources ~/.Xresources
 log_msg "Extracted Xresources serum"
