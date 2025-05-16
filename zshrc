@@ -198,7 +198,7 @@
     }
 
     # Created by promptline.vim which utilizes vim-airline on monokai theme
-    try_source ~/.promptline.sh
+    # try_source ~/.promptline.sh
     # cargo for rust
     try_source $HOME/.cargo/env
     # local customizations
@@ -210,5 +210,6 @@
 
     eval "`fnm env`"
     eval "$(zoxide init zsh)"
+    eval "$(starship init zsh)"
 
 ### End evals
