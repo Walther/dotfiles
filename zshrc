@@ -108,7 +108,7 @@
     ZLE_RPROMPT_INDENT=0
 
     # Some essentials
-    export EDITOR=nvim
+    export EDITOR=hx
     export SHELL=zsh
     export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>' # removed '/' from the list; ctrl-w on ls foo/bar/baz only removes baz
     export MANPAGER="sh -c 'col -bx | bat -l man -p'"
